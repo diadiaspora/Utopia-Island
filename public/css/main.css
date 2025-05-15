@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  
+  margin: 0px;
+  justify-content: center;
+}
+
+header {
+  color: white;
+  grid-column: span 2;
+  display: flex;
+  justify-content: row;
+  padding-top: 40px;
+  padding-bottom: 40px;;
+}
+
+.header {
+  display: flex;
+  justify-content: row;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  width: 800px;
+}
+aside {
+
+  background-repeat: no-repeat;
+
+  background-size: 900px;
+  background-position: center;
+  border-radius: 20px;
+ 
+
+}
+
+p {
+  color: white;
+    }
+    .utopia {
+      max-width: 1920px;
+        display: grid;
+        /* grid-template-rows: auto 1fr auto; */
+        /* three rows defined here */
+        grid-template-columns: 2fr 1fr;
+        /* two columns defined here */
+        font-family: "Cal Sans", sans-serif;
+        /* height: 100%; */
+      }
+
+    /* main {
+     
+      border-radius: 20px;
+      margin-left: 20px;
+      margin-top: 40px;
+      height: 1000px;
+      padding: 20px;
+    } */
+
+    .right {
+background-color: aqua;
+height: 1000px;
+    }

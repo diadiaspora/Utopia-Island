@@ -18,8 +18,32 @@
 
 
 | HTTP Method       | Path/Endpoint/URI  | CRUD Operation | Route Name | Has Data Payload | Purpose |
-| :---------------- | :----------------: | :-------------:| :--------: | :---------------:| :------:|
+| :---------------- | :----------------  | :------------- | :--------  | :--------------- | :------ |
 |                   |                    |                |            |                  |         |
 |                   |                    |                |            |                  |         |
 |                   |                    |                |            |                  |         |
 |                   |                    |                |            |                  |         |
+
+> ### Entity Relationship Diagrams
+
+## USER
+
+| Field             | Type               | Options        | 
+| :---------------- | :----------------  | :------------- | 
+| ID                | Object Id          |                |            
+| Username          | String             |                |           
+| Password          | String             |                |           
+|                   |                    |                |           
+
+## CITIZENS
+
+| Field             | Type               | Options        | 
+| :---------------- | :----------------  | :------------- | 
+| ID                | String             |                |            
+| Name              | String             |                |           
+| Former Position   | String             |                |           
+| Current Position  | String             |                |  
+| Rating            | Number             |                |   
+| Reason            | String             |                |   
+
+    
