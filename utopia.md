@@ -17,3 +17,9 @@
 - AAU, I want to add/invite new citizens. 
 
 
+| HTTP Method       | Path/Endpoint/URI  | CRUD Operation | Route Name | Has Data Payload | Purpose |
+| :---------------- | :----------------: | :-------------:| :--------: | :---------------:| :------:|
+|                   |                    |                |            |                  |         |
+|                   |                    |                |            |                  |         |
+|                   |                    |                |            |                  |         |
+|                   |                    |                |            |                  |         |
