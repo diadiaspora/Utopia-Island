@@ -15,3 +15,5 @@
 - AAU, I want to be able to banish/delete the profile of unwanted citizens. 
 
 - AAU, I want to add/invite new citizens. 
+
+

@@ -12,6 +12,11 @@ const session = require('express-session');
 // Set the port from environment variable or default to 3000
 const port = process.env.PORT || 3000;
 
+
+const authController = require('./controllers/auth.js');
+const citizensController = require('./controllers/citizens.js');
+
+
 mongoose.connect(process.env.MONGODB_URI);
 
 // Listen for the 'connected' event. 
@@ -42,6 +47,8 @@ app.use(session({
 // If a user is logged in, add the user's doc to req.user and res.locals.user
 app.use(require('./middleware/add-user-to-req-and-locals'));
 
+app.use("/auth", authController);
+app.use("/users/:userId/citizenss", citizensController);
 
 // Routes below
 
