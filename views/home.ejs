@@ -1,15 +1,16 @@
 
+<%- include('./partials/header.ejs') %>
 
     <div class="utopia">
         <header>
             <div class="header">
                 <div>
-                    <a href="/"> Utopia Island</a>
-                    <p> An app to populate your island</p>
+                    <img class= "image" src="/images/logo.png" alt="Utopia Island logo">
+                    <p class="sub"> An app to populate your island</p>
                 </div>
             </div>
             <div>
-                <%- include('./partials/header.ejs') %>
+                <%- include('./partials/buttons.ejs') %>
             </div>
          
         </header>
@@ -27,9 +28,9 @@
                 Historical figures or everyday celebrities</p>
             <p> The Unknown has provided you with a few favorites
                 You can delete them or change their role in the new society</p>
-            <button> <a href="/unicorns">Curren Citizens</a> </button>
+             <a href="/unicorns">Current Citizens</a> 
         </div>
-       
+        <%- include('./partials/closer.ejs') %>
         </aside>
         <main>
             
@@ -42,11 +43,29 @@
             <div>
                 <ol>
                     <li> Cleopatra </li>
+                    <li> Leonardo Davinci </li>
+                    <li> Ghandi </li>
+                    <li> James Brown </li>
+                    <li> Greta Thornburg </li>
+                    <li> Charles Darwin </li>
+                    <li> Rocky Balboa </li>
+                    <li> Lady Gaga </li>
+                    <li> Anthony Bordain </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li>  </li>
+                    <li> </li>
                 </ol>
             </div>
         </div>
         
         </main>
     </div>
-
-   
+    <%- include('./partials/footer.ejs') %>

@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: row;
 
-  margin: 0px;
+  margin: 40px;
   justify-content: center;
 }
 
@@ -19,7 +19,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   grid-template-columns: 2fr 1fr;
-  background-color: darkgoldenrod;
+  background-color: black;
 }
 
 .header {
@@ -29,7 +29,7 @@ header {
   border-bottom-right-radius: 20px;
   border-radius: 20px;
   color: #ffffff;
-  background-color: greenyellow;
+  background-color: black;
 }
 
 aside {
@@ -52,7 +52,7 @@ p {
 }
 
 .left {
-  background-color: blueviolet;
+  background-color: black;
 }
 /* main {
      
@@ -64,8 +64,8 @@ p {
     } */
 
 .right {
-  background-color: aqua;
-  height: 400px;
+  background-color: #DEFCAB;
+  height: 500px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -77,6 +77,28 @@ footer {
 
 nav{
   
-  background-color: fuchsia;
+  background-color: black;
 }
 
+a:link, a:visited {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #DEFCAB;
+}
+
+.image {
+  width: 300px;
+}
+
+.sub {
+  color: #DEFCAB;
+}

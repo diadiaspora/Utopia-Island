@@ -59,6 +59,30 @@ app.get('/', (req, res) => {
   res.render('home.ejs');
 });
 
+app.get("/citizens", async (req, res) => {
+  
+ res.send("Show all citizens here");
+
+ 
+});
+
+
+app.get("/citizens/new", async (req, res) => {
+  res.send("Show form to add new citizen here");
+  // res.render("citizens/new.ejs");
+});
+
+app.get("/citizens/show", async (req, res) => {
+  res.send("Show specific Citizen Profile here ");
+  // res.render("citizens/show.ejs");
+});
+
+app.get("/citizens/edit", async (req, res) => {
+  res.send("show form for editing specific users profile ");
+  // res.render("citizens/edit.ejs");
+});
+
+
 // The '/auth' is the "starts with" path.  The
 // paths defined in the router/controller will be
 // appended to the "starts with" path
