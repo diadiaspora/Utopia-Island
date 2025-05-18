@@ -3,9 +3,9 @@
         <% for (let i=0; i < 20; i++) { %>
             
             <li>
-           
+                <a href="/citizens/<%= citizen._id %>">
                 <%= citizens[i] ? citizens[i].name : '' %> 
-            
+            </a>
             </li>
         
             <% } %>
