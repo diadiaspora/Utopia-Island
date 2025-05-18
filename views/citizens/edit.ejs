@@ -17,18 +17,17 @@
         <aside>
             <div class="left">
                 <div class="forms">
-                    <form action="/citizens" method="POST">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" />
+                    <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST">
+                       <h1>  <%= citizen.name %> </h1>
 
                         <label for="formerRole"> Former Role:</label>
-                        <input type="text" name="formerRole" id="formerRole" />
+                        <input type="text" name="formerRole" id="formerRole" value="<%= citizen.formerRole %>"  />
 
                         <label for="currentRole"> Current Role:</label>
-                        <input type="text" name="currentRole" id="currentRole" />
+                        <input type="text" name="currentRole" id="currentRole" value="<%= citizen.currentRole %>"  />
 
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
-                        <input type="text" name="reason" id="reason" />
+                        <input type="text" name="reason" id="reason" value="<%= citizen.reason %>" />
 
                         <label for="rating"> Rating:</label>
                         <input type="number" name="rating" id="rating" />
@@ -52,7 +51,6 @@
                 </div>
                 <div>
 
-                    <%- include('../partials/list.ejs') %>
                 </div>
             </div>
 
