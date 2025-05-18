@@ -3,7 +3,7 @@ const express = require("express");
 
 
 
-// models/fruit.js
+
 
 const mongoose = require("mongoose");
 

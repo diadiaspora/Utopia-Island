@@ -22,6 +22,8 @@ router.get("/:citizenId", async (req, res) => {
   const foundCitizen = await Citizen.findById(req.params.citizenId);
   const allCitizens = await Citizen.find({});
 
+
+
   res.render("citizens/show.ejs", { citizen: foundCitizen });
 });
 

@@ -37,6 +37,18 @@
                 <div style="color: white;">
                     <%= citizen.reason %>
                 </div>
+               
+                <div> <% if (citizen.review===1) { %>
+                    <%- include('../partials/rating1.ejs') %>
+                        <% } else if (citizen.review===2) { %>
+                            <%- include('../partials/rating2.ejs') %>
+                                <% } else if (citizen.review===3) { %>
+                                    <%- include('../partials/rating3.ejs') %>
+                                        <% } else if (citizen.review===4) { %>
+                                            <%- include('../partials/rating4.ejs') %>
+                                                <% } else if (citizen.review===5) { %>
+                                                    <%- include('../partials/rating5.ejs') %>           <% } %>
+                                                            </div>
                  </div>
             </div>
             <div>
