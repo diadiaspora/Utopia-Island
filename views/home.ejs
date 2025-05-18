@@ -3,68 +3,73 @@
         <header>
             <div class="header">
                 <div>
-                    <img class= "image" src="/images/logo.png" alt="Utopia Island logo">
+                    <img class="image" src="/images/logo.png" alt="Utopia Island logo">
                     <p class="sub"> An app to populate your island</p>
                 </div>
             </div>
             <div>
                 <%- include('./partials/buttons.ejs') %>
             </div>
-         
+
         </header>
 
         <aside>
-            <div class="left"> 
-            <p> The current year is Zed</p>
-            <p> You have been provided with the last (and first)
-                Island in this edition of humanity. </p>
-            <p> In addition to your personal circle,</p>
-            <p> You can invite celebrities from the former edition of humanity</p>
-            <p> These celebrities can be
-                ‘living‘ or ‘dead’
-                fictional or non fictional
-                Historical figures or everyday celebrities</p>
-            <p> The Unknown has provided you with a few favorites
-                You can delete them or change their role in the new society</p>
-                <a href="/auth/sign-in">Review Citizens</a> 
-        </div>
-        <%- include('./partials/closer.ejs') %>
+            <div class="left" style="margin-bottom: 150px;"> >
+                <p style="color: #DEFCAB; "> The current year is Zed...</p>
+                <p style="color: #DEFCAB"> You have been provided with the last (and first)
+                    Island in this edition of humanity. </p>
+                <p style="color: #DEFCAB"> In addition to your personal circle,</p>
+                <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former edition of
+                    humanity</p>
+                <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
+                <ul style="color:white; font-weight: bold; font-size: 20px;">
+                    <li> ‘Living‘ or ‘dead’ </li>
+                    <li> Fictional or non fictional</li>
+                    <li> Historical figures or everyday celebrities</li>
+                </ul>
+                <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
+                    You can delete them or change their role in the new society</p>
+                <div style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">
+                    <a href="/auth/sign-in">Review Citizens</a>
+                </div>
+            </div>
+
         </aside>
         <main>
-            
-            <div class="right"> 
-            
-            <div>
-                <a href="/unicorns">Current Citizens</a>
+
+            <div class="right">
+
+                <div>
+                    <a href="/unicorns" style="font-weight: bold; font-size: 20px;">Current Citizens</a>
+
+                </div>
+                <div>
+                    <ol>
+                        <li> Cleopatra </li>
+                        <li> Leonardo Davinci </li>
+                        <li> Ghandi </li>
+                        <li> James Brown </li>
+                        <li> Greta Thornburg </li>
+                        <li> Charles Darwin </li>
+                        <li> Rocky Balboa </li>
+                        <li> Lady Gaga </li>
+                        <li> Anthony Bordain </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                        <li> </li>
+                    </ol>
+                </div>
 
             </div>
-            <div>
-                <ol>
-                    <li> Cleopatra </li>
-                    <li> Leonardo Davinci </li>
-                    <li> Ghandi </li>
-                    <li> James Brown </li>
-                    <li> Greta Thornburg </li>
-                    <li> Charles Darwin </li>
-                    <li> Rocky Balboa </li>
-                    <li> Lady Gaga </li>
-                    <li> Anthony Bordain </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
-                </ol>
-            </div>
-    
-        </div>
-        
+
         </main>
     </div>
     <%- include('./partials/footer.ejs') %>

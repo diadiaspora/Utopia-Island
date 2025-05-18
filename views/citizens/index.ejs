@@ -1,63 +1,70 @@
 <%- include('../partials/header.ejs') %>
-<div class="utopia">
-    <header>
-        <div class="header">
-            <div>
-                <img class="image" src="/images/logo.png" alt="Utopia Island logo">
-                <p class="sub"> An app to populate your island</p>
+    <div class="utopia">
+        <header>
+            <div class="header">
+                <div>
+                    <img class="image" src="/images/logo.png" alt="Utopia Island logo">
+                    <p class="sub"> An app to populate your island</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <%- include('../partials/buttons.ejs') %>
-        </div>
+            <div>
+                <%- include('../partials/buttons.ejs') %>
+            </div>
 
-    </header>
+        </header>
 
-    <aside>
-        <div class="left">
-            <h1 style="color: aliceblue;">Current Citizens </h1>
-                    <ul class="ulist">
-                      
-                    
-                     
-                        <% citizens.forEach(citizen=> { %>
-                            
+        <aside class="margin">
+            <div class="left">
+                <h1 style="color: white; margin-left: 180px;">Current Citizens </h1>
+                <ul class="ulist">
+
+
+
+                    <% citizens.forEach(citizen=> { %>
+                        <div>
                             <li class="list">
-                                <div class="name"><%= citizen.name %></div>
-                               
+
+                                <div class="name">
+                                    <%= citizen.name %>
+                                </div>
+
                                 <div style="color: white;">
-                                    <%= citizen.formerRole %>          </div>
-
-                                <a href="/citizens/<%= citizen._id %>" >View Profile</a>
+                                    <%= citizen.formerRole %>
+                                </div>
                                 
-                            </li> 
-                               
-                            <% }); %>   
-                       
-                    
-                         </ul>
-        </div>
+                                <a href="/citizens/<%= citizen._id %>" class="links"
+                                    style="background-color:#2B342D; font-size: 18px;">View Profile</a>
+                            </li>
+                        </div>
 
-        <a href="/citizens/new">Add New Citizen</a>
-        <%- include('../partials/closer.ejs') %>
-    </aside>
-    <main>
+                        <% }); %>
 
-        <div class="right">
 
-            <div>
-                <a href="/unicorns">Current Citizens</a>
-
+                </ul>
             </div>
-            <div>
-                <%- include('../partials/list.ejs') %>
+
+            <a href="/citizens/new"
+                style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Add New
+                Citizen</a>
+           
+        </aside>
+        <main>
+
+            <div class="right">
+
+                <div>
+                    <a href="/unicorns">Current Citizens</a>
+
+                </div>
+                <div>
+                    <%- include('../partials/list.ejs') %>
+                </div>
             </div>
-        </div>
 
-    </main>
-</div>
-
+        </main>
+    </div>
 
 
 
-<%- include('../partials/footer.ejs') %>
+
+    <%- include('../partials/footer.ejs') %>

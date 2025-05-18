@@ -18,22 +18,23 @@
               <source src="audio/audio.mp3" type="audio/mpeg">
             </audio>
       
-      
-            <span>
-              <div>
-                <p> You are signed in </p>
-                <%= user.name %>
-              </div>
-            </span>
+      <div > 
+        <div class="butt"> 
+          <p> You are signed in, <%= user.name %></p>
+         
+      </div>
+           
             <a href="/auth/sign-out">SIGN OUT</a>
-      
+          </div>
             <% } else { %>
               <audio controls autoplay>
       
                 <source src="audio/audio.mp3" type="audio/mpeg">
               </audio>
-              <p> Dont have an account? </p>
+              <div class="butt"> 
+              <p style="margin-right: 10px; padding-top: 10px;"> Dont have an account? </p>
               <a href="/auth/sign-up">SIGN UP</a>
+            </div>
               
               <% } %>
         </div>
@@ -42,24 +43,28 @@
 
   </header>
 
-
+  <div class="left" style="margin-top: 5px;">
 <div class="sign"> 
 
 
 <div class="forms"> 
   <h1 class="form">Sign In</h1>
-<form action="/auth/sign-in" method="POST">
+<form action="/auth/sign-in" method="POST" class="getin">
   <label for="email">Email:</label>
   <input type="email" name="email" id="email" />
   <label for="password">Password:</label>
   <input type="password" name="password" id="password" />
-  <button type="submit">SIGN IN</button>
+  <button type="submit" class="rightbutt">SIGN IN</button>
 </form>
 
 </div>
-
 </div>
 
 <p class="error-msg"><%= error %></p>
 </div>
+<img src="/images/palm.png" alt="Italian Trulli" style="width: 300px; margin-top: 5px;">
+</div>
+
+
+ 
 <%- include('../partials/footer.ejs') %>

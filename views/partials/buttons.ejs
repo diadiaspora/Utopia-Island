@@ -9,19 +9,21 @@
             </audio>
 
 
-            <span>
-                <div> <p> You are signed in </p>
-                <%= user.name %> </div>
-            </span>
-            <a href="/auth/sign-out">SIGN OUT</a>
+          <div class="butt"> 
+                <p style="margin-right: 10px; padding-top: 10px;"> You are signed in, <%= user.name %></p>
+                <a href="/auth/sign-out">SIGN OUT</a>
+            </div>
             
             <% } else { %>
                 <audio controls autoplay>
 
                     <source src="audio/audio.mp3" type="audio/mpeg">
                 </audio>
-                <a href="/auth/sign-up">SIGN UP</a>
-                <a href="/auth/sign-in">SIGN IN</a>
+                <div class="butt"> 
+                    <p style="margin-right: 10px; padding-top: 10px;"> Get started..</p>
+                <a href="/auth/sign-up" class="up">SIGN UP</a>
+                <a href="/auth/sign-in" class="in">SIGN IN</a>
+                </div>
                 <% } %>
     </div>
 </nav>

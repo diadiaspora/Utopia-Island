@@ -14,33 +14,33 @@
 
         </header>
 
-        <aside>
+        <aside class="margin">
             <div class="left">
                 <div class="forms">
-                    <form action="/citizens" method="POST">
+                    <form action="/citizens" method="POST" class="getin">
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" />
-
+<div class="rolediv"> 
+    <div> 
                         <label for="formerRole"> Former Role:</label>
                         <input type="text" name="formerRole" id="formerRole" />
-
+                                  </div>
+                                  <div> 
                         <label for="currentRole"> Current Role:</label>
                         <input type="text" name="currentRole" id="currentRole" />
-
+                    </div>
+                                  </div>
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
                         <input type="text" name="reason" id="reason" />
 
                         <label for="rating"> Rating:</label>
                         <input type="number" name="rating" id="rating" />
-
-
-
                      
-                        <button type="submit">Add Citizen</button>
+                        <button type="submit" class="rightbutt">Add Citizen</button>
                     </form>              
                 </div>
             </div>
-            <%- include('../partials/closer.ejs') %>
+           
         </aside>
         <main>
 

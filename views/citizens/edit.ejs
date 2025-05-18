@@ -14,19 +14,23 @@
 
         </header>
 
-        <aside>
+        <aside class="margin">
             <div class="left">
                 <div class="forms">
-                    <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST">
+                    <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST" class="getin">
                         <h1>
                             <%= citizen.name %>
                         </h1>
-
+                         <div class="rolediv">
+                            <div> 
                         <label for="formerRole"> Former Role:</label>
                         <input type="text" name="formerRole" id="formerRole" value="<%= citizen.formerRole %>" />
-
+                                  </div>
+                                  <div> 
                         <label for="currentRole"> Current Role:</label>
                         <input type="text" name="currentRole" id="currentRole" value="<%= citizen.currentRole %>" />
+                    </div>
+</div>
 
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
                         <input type="text" name="reason" id="reason" value="<%= citizen.reason %>" />
@@ -36,15 +40,16 @@
 
 
 
-
+                           <div class="rolediv">
                         <button type="submit">Update Citizen</button>
                         <form action="/citizens/<%=citizen._id%>?_method=DELETE" method="POST">
-                            <button type="submit">Delete <%= citizen.name %></button>
+                            <button type="submit" >Delete <%= citizen.name %></button>
+                            </div>
                         </form>
                     </form>
                 </div>
             </div>
-            <%- include('../partials/closer.ejs') %>
+           
         </aside>
         <main>
 

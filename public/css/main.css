@@ -32,9 +32,30 @@ header {
   background-color: black;
 }
 
+nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.butt {
+  display: flex;
+  align-items: flex-start;
+ justify-content: right;
+ margin-right: -20px;
+}
+
 aside {
   background-color: black;
   border-radius: 20px;
+  font-size: 18px;
+  margin-right: 40px;
+  width: 550px;
+  
+}
+
+.margin {
+  margin-top: 43px;
 }
 
 p {
@@ -52,7 +73,9 @@ p {
 }
 
 .left {
+  margin-top: -45px;
   background-color: black;
+  width: 550px;
 }
 /* main {
      
@@ -65,14 +88,14 @@ p {
 
 .right {
   background-color: #DEFCAB;
-  height: 500px;
+  height: 475px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
 footer {
-  color: azure;
-  background-color: darkorange;
+  color: white;
+ ;
 }
 
 nav{
@@ -89,6 +112,7 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 15px;
 }
 
 a:hover, a:active {
@@ -101,6 +125,8 @@ a:hover, a:active {
 
 .sub {
   color: #DEFCAB;
+  margin-top: -2px;
+  font-size: 22px;
 }
 
 label {
@@ -111,9 +137,12 @@ label {
   color: white;
 }
 
+
+
+
 form {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   gap: 2vmin;
 }
 
@@ -131,6 +160,10 @@ form * {
   border-color: #525E4F;
   padding: 20px ;
   border-radius: 20px;
+}
+
+input {
+  width: 100%;
 }
 .sign {
   display: grid;
@@ -168,6 +201,8 @@ a .profile {
   padding: 20px;
 border-radius: 20px;
 columns: 2;
+height: 175px;
+
 }
 
 .list {
@@ -244,4 +279,40 @@ columns: 2;
   border-width: 10px;
   padding: 20px;
   border-color: #525E4F;
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+ 
+}
+
+.up {
+  margin-right: 150px;
+}
+
+.getin {
+ 
+    display: flex;
+    flex-direction: column;
+    max-width: 550px; /* optional, controls form width */
+  
+}
+
+.rightbutt{
+  align-self: flex-end;
+}
+
+.rolediv {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.align{
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  width: 50px;
 }
