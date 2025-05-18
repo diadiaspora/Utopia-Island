@@ -1,0 +1,61 @@
+<%- include('../partials/header.ejs') %>
+
+    <div class="utopia">
+        <header>
+            <div class="header">
+                <div>
+                    <img class="image" src="/images/logo.png" alt="Utopia Island logo">
+                    <p class="sub"> An app to populate your island</p>
+                </div>
+            </div>
+            <div>
+                <%- include('../partials/buttons.ejs') %>
+            </div>
+
+        </header>
+
+        <aside>
+            <div class="left">
+                <div class="forms">
+                    <form action="/citizens" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" />
+
+                        <label for="formerRole"> Former Role:</label>
+                        <input type="text" name="formerRole" id="formerRole" />
+
+                        <label for="currentRole"> Current Role:</label>
+                        <input type="text" name="currentRole" id="currentRole" />
+
+                        <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
+                        <input type="text" name="reason" id="reason" />
+
+                        <label for="rating"> Rating:</label>
+                        <input type="number" name="rating" id="rating" />
+
+
+
+
+                        <button type="submit">Add Citizen</button>
+                    </form>
+                </div>
+            </div>
+            <%- include('../partials/closer.ejs') %>
+        </aside>
+        <main>
+
+            <div class="right">
+
+                <div>
+                    <a href="/unicorns">Current Citizens</a>
+
+                </div>
+                <div>
+
+                    <%- include('../partials/list.ejs') %>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,54 @@
+<%- include('../partials/header.ejs') %>
+
+    <div class="utopia">
+        <header>
+            <div class="header">
+                <div>
+                    <img class="image" src="/images/logo.png" alt="Utopia Island logo">
+                    <p class="sub"> An app to populate your island</p>
+                </div>
+            </div>
+            <div>
+                <%- include('../partials/buttons.ejs') %>
+            </div>
+
+        </header>
+
+        <aside>
+            <div class="left">
+                <div class="course-card">
+                <div style="color: white;">
+                    <%= citizen.name %>  
+                 </div>
+                <div style="color: white;">
+                    <%= citizen.formerRole %>
+                </div>
+                <div style="color: white;">
+                    <%= citizen.currentRole %>
+                </div>
+                <div style="color: white;">
+                    <%= citizen.reason %>
+                </div>
+                 </div>
+            </div>
+            <div>
+                <button> Edit <%= citizen.name %> </button>
+            </div>
+            <%- include('../partials/closer.ejs') %>
+        </aside>
+        <main>
+
+            <div class="right">
+
+                <div>
+                    <a href="/unicorns">Current Citizens</a>
+
+                </div>
+                <div>
+                  
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <%- include('../partials/footer.ejs') %>

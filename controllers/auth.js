@@ -44,7 +44,7 @@ router.post('/sign-in', async (req, res) => {
     if (!isValidPassword) throw new Error();
     req.session.userId = user._id;
     // TODO: Redirect to what you want in your app
-    res.redirect('/');
+    res.redirect('/citizens');
   } catch {
     res.render('auth/sign-in.ejs', { error: 'Invalid Credentials' });
   }

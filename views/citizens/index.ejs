@@ -1,0 +1,68 @@
+<%- include('../partials/header.ejs') %>
+<div class="utopia">
+    <header>
+        <div class="header">
+            <div>
+                <img class="image" src="/images/logo.png" alt="Utopia Island logo">
+                <p class="sub"> An app to populate your island</p>
+            </div>
+        </div>
+        <div>
+            <%- include('../partials/buttons.ejs') %>
+        </div>
+
+    </header>
+
+    <aside>
+        <div class="left">
+            <div class="carousel-container">
+                <button class="arrow arrow-left">&#10094;</button>
+                <button class="arrow arrow-right">&#10095;</button>
+            
+                <div class="courses-wrapper" id="carousel">
+                    <div > 
+                       
+                        <% citizens.forEach(citizen=> { %>
+                            
+                            <div class="course-card">
+                                <div class="course-title"><%= citizen.name %></div>
+                                <div class="course-info"><%= citizen.currentRole %></div>
+                                <a href="/citizens/<%= citizen._id %>" >View Profile</a>
+                                
+                            </div> 
+                               
+                            <% }); %>   
+                           
+                    </div>
+             
+                  
+                </div>
+            
+                <div class="dots" id="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>  </div>
+        </div>
+        <%- include('../partials/closer.ejs') %>
+    </aside>
+    <main>
+
+        <div class="right">
+
+            <div>
+                <a href="/unicorns">Current Citizens</a>
+
+            </div>
+            <div>
+                <%- include('../partials/list.ejs') %>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+
+
+
+<%- include('../partials/footer.ejs') %>

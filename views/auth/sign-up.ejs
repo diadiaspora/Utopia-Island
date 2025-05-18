@@ -1,7 +1,8 @@
 <%- include('../partials/header.ejs') %>
 
-<h1>Sign Up!</h1>
+<h1 class="form">Sign Up!</h1>
 
+<div class="forms">
 <form action="/auth/sign-up" method="POST">
   <label for="name">Name:</label>
   <input type="text" name="name" id="name" />
@@ -13,6 +14,7 @@
   <input type="password" name="confirmPassword" id="confirmPassword" />
   <button type="submit">SIGN UP</button>
 </form>
+</div>
 
 <p class="error-msg"><%= error %></p>
 

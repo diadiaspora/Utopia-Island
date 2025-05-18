@@ -9,11 +9,12 @@
             </audio>
 
 
-            <a href="/unicorns/new">ADD Citizen</a>
-            <a href="/auth/sign-out">SIGN OUT</a>
             <span>
-                <%= user.name %>
+                <div> <p> You are signed in </p>
+                <%= user.name %> </div>
             </span>
+            <a href="/auth/sign-out">SIGN OUT</a>
+            
             <% } else { %>
                 <audio controls autoplay>
 

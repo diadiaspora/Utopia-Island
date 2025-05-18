@@ -1,34 +1,39 @@
+const express = require("express");
+const router = express.Router();
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+
+
 // Citizen Schema
-const citizenSchema = new Schema(
-  {
-    celebrityName: {
-      type: String,
-      required: true,
-    },
-    formerPosition: {
-      type: String,
-      required: true,
-    },
-    newPosition: {
-      type: String,
-      required: true,
-    },
-    rating: {
-      type: Number,
-      min: 1,
-      max: 10,
-      default: 5,
-    },
-    summary: {
-      type: String,
-      required: true,
-    },
-  },
-  { timestamps: true }
-); // Add timestamps here
+// const citizenSchema = new Schema(
+//   {
+//     celebrityName: {
+//       type: String,
+//       required: true,
+//     },
+//     formerPosition: {
+//       type: String,
+//       required: true,
+//     },
+//     newPosition: {
+//       type: String,
+//       required: true,
+//     },
+//     rating: {
+//       type: Number,
+//       min: 1,
+//       max: 10,
+//       default: 5,
+//     },
+//     summary: {
+//       type: String,
+//       required: true,
+//     },
+//   },
+//   { timestamps: true }
+// ); // Add timestamps here
 
 // User Schema
 const userSchema = new Schema(
@@ -46,7 +51,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    society: [citizenSchema], // Embed citizenSchema as an array
+   
   },
   { timestamps: true }
 ); // Add timestamps here

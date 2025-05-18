@@ -1,0 +1,23 @@
+<div>
+    <ol>
+        <% for (let i=0; i < 20; i++) { %>
+            <li>
+              
+                <%= citizens[i] ? citizens[i].name : '' %> 
+           
+            </li>
+            <% } %>
+    </ol>
+</div>
+
+<!-- <div>
+    <ol>
+
+        <% citizens.forEach(citizen=> { %>
+            <li>
+                <%= citizen.name %>
+            </li>
+            <% }); %>
+    </ol>
+</div> -->
+
