@@ -35,10 +35,15 @@ router.post("/", async (req, res) => {
   res.redirect("/citizens");
 });
 
-router.put("/citizenId", async (req, res) => {
+router.put("/:citizenId", async (req, res) => {
   await Citizen.findByIdAndUpdate(req.params.citizenId, req.body);
   
-  res.redirect("/citizens/:citizenId`");
+  res.redirect("/citizens");
+});
+
+router.delete("/citizens/:citizenId", async (req, res) => {
+  await Citizen.findByIdAndDelete(req.params.citizenId);
+  res.redirect("/citizens");
 });
 
 // router logic will go here - will be built later on in the lab

@@ -137,91 +137,111 @@ form * {
   grid-template-columns: auto auto;
 }
 
-.carousel-container {
-  position: relative;
-  /* width: 100%; */
-  overflow: hidden;
-  padding: 2rem 3rem;
-  box-sizing: border-box;
-}
-
-.courses-wrapper {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none;    /* Firefox */
-}
-
-.courses-wrapper::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
-}
-
-.course-card {
-  flex: 0 0 50%;
-  box-sizing: border-box;
-  background-color: #2B342D;
-  border-style: solid;
-  border-width: 10px;
-  border-color: #525E4F;
-  padding: 20px ;
-  border-radius: 20px;
-  min-height: 200px;
-}
-
-.course-title {
-  font-size: 1.5rem;
+.name {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 32;
   color: white;
-}
-
-.course-info {
-  font-size: 1rem;
-  color: white;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  z-index: 1;
-  border-radius: 50%;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-.dots {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot.active {
-  background: #2ecc71;
 }
 
 a .profile {
   background-color: none;
+}
+
+.ulist {
+  width: 550px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+}
+
+.ulist {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.list {
+  width: 100%;
+  list-style-type: none;
+  background-color: #2B342D;
+  border: 10px solid #525E4F;
+  padding: 20px;
+border-radius: 20px;
+columns: 2;
+}
+
+.list {
+    scroll-snap-align: center;
+}
+
+.list:nth-child(even) {
+  background-color: #2B342D;
+  border: 10px solid #525E4F;
+}
+
+.ulist {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.list {
+  scroll-snap-align: center;
+}
+
+.ulist::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.ulist::scroll-button(*):hover,
+.ulist::scroll-button(*):focus {
+  color: rgb(255, 255, 255);
+}
+
+.ulist::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.ulist::scroll-button(*):disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: unset;
+}
+
+.ulist::scroll-button(left) {
+  content: "◄";
+}
+
+.ulist::scroll-button(right) {
+  content: "►";
+}
+
+.ulist {
+  anchor-name: --myCarousel;
+}
+
+.ulist::scroll-button(*) {
+  position: absolute;
+  position-anchor: --myCarousel;
+}
+
+.ulist::scroll-button(left) {
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+.ulist::scroll-button(right) {
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+.card {
+  background-color: #2B342D;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 10px;
+  padding: 20px;
+  border-color: #525E4F;
 }

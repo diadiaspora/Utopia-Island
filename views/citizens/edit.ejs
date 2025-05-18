@@ -18,13 +18,15 @@
             <div class="left">
                 <div class="forms">
                     <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST">
-                       <h1>  <%= citizen.name %> </h1>
+                        <h1>
+                            <%= citizen.name %>
+                        </h1>
 
                         <label for="formerRole"> Former Role:</label>
-                        <input type="text" name="formerRole" id="formerRole" value="<%= citizen.formerRole %>"  />
+                        <input type="text" name="formerRole" id="formerRole" value="<%= citizen.formerRole %>" />
 
                         <label for="currentRole"> Current Role:</label>
-                        <input type="text" name="currentRole" id="currentRole" value="<%= citizen.currentRole %>"  />
+                        <input type="text" name="currentRole" id="currentRole" value="<%= citizen.currentRole %>" />
 
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
                         <input type="text" name="reason" id="reason" value="<%= citizen.reason %>" />
@@ -35,7 +37,10 @@
 
 
 
-                        <button type="submit">Add Citizen</button>
+                        <button type="submit">Update Citizen</button>
+                        <form action="/citizens/<%=citizen._id%>?_method=DELETE" method="POST">
+                            <button type="submit">Delete <%= citizen.name %></button>
+                        </form>
                     </form>
                 </div>
             </div>
@@ -49,9 +54,7 @@
                     <a href="/unicorns">Current Citizens</a>
 
                 </div>
-                <div>
-
-                </div>
+              
             </div>
 
         </main>

@@ -16,7 +16,7 @@
 
         <aside>
             <div class="left">
-                <div class="course-card">
+                <div class="card">
                 <div style="color: white;">
                     <%= citizen.name %>  
                  </div>
@@ -32,7 +32,8 @@
                  </div>
             </div>
             <div>
-                <button> Edit <%= citizen.name %> </button>
+                
+                <a href="/citizens/<%= citizen._id %>/edit">Edit <%= citizen.name %></a>
             </div>
             <%- include('../partials/closer.ejs') %>
         </aside>

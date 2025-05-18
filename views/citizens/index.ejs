@@ -15,35 +15,30 @@
 
     <aside>
         <div class="left">
-            <div class="carousel-container">
-                <button class="arrow arrow-left">&#10094;</button>
-                <button class="arrow arrow-right">&#10095;</button>
-            
-                <div class="courses-wrapper" id="carousel">
-                    <div > 
-                       
+            <h1 style="color: aliceblue;">Current Citizens </h1>
+                    <ul class="ulist">
+                      
+                    
+                     
                         <% citizens.forEach(citizen=> { %>
                             
-                            <div class="course-card">
-                                <div class="course-title"><%= citizen.name %></div>
-                                <div class="course-info"><%= citizen.currentRole %></div>
+                            <li class="list">
+                                <div class="name"><%= citizen.name %></div>
+                               
+                                <div style="color: white;">
+                                    <%= citizen.formerRole %>          </div>
+
                                 <a href="/citizens/<%= citizen._id %>" >View Profile</a>
                                 
-                            </div> 
+                            </li> 
                                
                             <% }); %>   
-                           
-                    </div>
-             
-                  
-                </div>
-            
-                <div class="dots" id="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>  </div>
+                       
+                    
+                         </ul>
         </div>
+
+        <a href="/citizens/new">Add New Citizen</a>
         <%- include('../partials/closer.ejs') %>
     </aside>
     <main>

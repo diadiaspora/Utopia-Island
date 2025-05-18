@@ -1,9 +1,53 @@
 <%- include('../partials/header.ejs') %>
+<div class="utopia">
+  <header>
+    <div class="header">
+      <div>
+        <img class="image" src="/images/logo.png" alt="Utopia Island logo">
+        <p class="sub"> An app to populate your island</p>
+      </div>
+    </div>
+    <div>
+      <nav>
+      
+        <div>
+      
+          <% if (user) { %>
+            <audio controls autoplay>
+      
+              <source src="audio/audio.mp3" type="audio/mpeg">
+            </audio>
+      
+      
+            <span>
+              <div>
+                <p> You are signed in </p>
+                <%= user.name %>
+              </div>
+            </span>
+            <a href="/auth/sign-out">SIGN OUT</a>
+      
+            <% } else { %>
+              <audio controls autoplay>
+      
+                <source src="audio/audio.mp3" type="audio/mpeg">
+              </audio>
+              <p> Dont have an account? </p>
+              <a href="/auth/sign-up">SIGN UP</a>
+              
+              <% } %>
+        </div>
+        </nav>
+    </div>
+
+  </header>
+
 
 <div class="sign"> 
-<h1 class="form">Sign In</h1>
+
 
 <div class="forms"> 
+  <h1 class="form">Sign In</h1>
 <form action="/auth/sign-in" method="POST">
   <label for="email">Email:</label>
   <input type="email" name="email" id="email" />
@@ -11,10 +55,11 @@
   <input type="password" name="password" id="password" />
   <button type="submit">SIGN IN</button>
 </form>
+
 </div>
 
 </div>
 
 <p class="error-msg"><%= error %></p>
-
+</div>
 <%- include('../partials/footer.ejs') %>
