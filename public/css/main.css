@@ -225,15 +225,17 @@ height: 175px;
 
 .ulist::scroll-button(*) {
   border: 0;
+  border-radius: 20px;
   font-size: 2rem;
   background: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 
 .ulist::scroll-button(*):hover,
 .ulist::scroll-button(*):focus {
-  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .ulist::scroll-button(*):active {
@@ -241,8 +243,9 @@ height: 175px;
 }
 
 .ulist::scroll-button(*):disabled {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   cursor: unset;
+  border-radius: 20px;
 }
 
 .ulist::scroll-button(left) {
@@ -315,4 +318,17 @@ height: 175px;
 
 .links {
   width: 50px;
+}
+
+.citlist {
+ 
+  background-color: none;
+  color: black;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  text-align: lest;
+  text-decoration: underline;
+
+  border-radius: 0px;
 }

@@ -31,7 +31,10 @@
                                 <div style="color: white;">
                                     <%= citizen.formerRole %>
                                 </div>
-                                
+                                <div>
+                                    <%= '⭐️' .repeat(citizen.rating) %>
+                                </div>
+
                                 <a href="/citizens/<%= citizen._id %>" class="links"
                                     style="background-color:#2B342D; font-size: 18px;">View Profile</a>
                             </li>
@@ -46,7 +49,7 @@
             <a href="/citizens/new"
                 style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Add New
                 Citizen</a>
-           
+
         </aside>
         <main>
 

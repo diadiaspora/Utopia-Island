@@ -17,36 +17,39 @@
         <aside class="margin">
             <div class="left">
                 <div class="card">
-                <div style="color: white;">
-                    <%= citizen.name %>  
-                 </div>
-                <div class="rolediv">
+                    <div style="color: white;">
+                        <%= citizen.name %>
+                    </div>
+                    <div class="rolediv">
+                        <div>
+                            <p> Former Role</p>
+                            <div style="color: white;">
+                                <%= citizen.formerRole %>
+                            </div>
+                        </div>
+                        <div>
+                            <p> Former Role</p>
+                            <div style="color: white;">
+                                <%= citizen.currentRole %>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="color: white;">
+                        <%= citizen.reason %>
+                    </div>
+
                     <div>
-                        <p> Former Role</p>
-                <div style="color: white;">
-                    <%= citizen.formerRole %>
+                        <%= '⭐️' .repeat(citizen.rating) %>
+                    </div>
                 </div>
-                </div>
-                <div>
-                    <p> Former Role</p>
-                <div style="color: white;">
-                    <%= citizen.currentRole %>
-                </div>
-                </div>
-                </div>
-                <div style="color: white;">
-                    <%= citizen.reason %>
-                </div>
-               
-                <div><%= '⭐️' .repeat(citizen.rating) %>
-                                                            </div>
-                 </div>
             </div>
             <div>
-                
-                <a href="/citizens/<%= citizen._id %>/edit" style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Edit <%= citizen.name %></a>
+
+                <a href="/citizens/<%= citizen._id %>/edit"
+                    style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Edit <%=
+                        citizen.name %></a>
             </div>
-           
+
         </aside>
         <main>
 
@@ -57,7 +60,9 @@
 
                 </div>
                 <div>
-                  
+
+
+
                 </div>
             </div>
 

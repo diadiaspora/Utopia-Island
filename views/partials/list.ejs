@@ -2,11 +2,12 @@
     <ol>
         <% for (let i=0; i < 20; i++) { %>
             
-            <li>
-                <a href="/citizens/<%= citizen._id %>">
-                <%= citizens[i] ? citizens[i].name : '' %> 
-            </a>
-            </li>
+            <li class="citlist">
+                <% if (citizens[i]) { %>
+                    <a href="/citizens/<%= citizens[i]._id %>">
+                        <%= citizens[i].name %>
+                    </a>
+                    <% } %>       </li>
         
             <% } %>
     </ol>
