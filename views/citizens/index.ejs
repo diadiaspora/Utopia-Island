@@ -15,7 +15,7 @@
 
         <aside class="margin">
             <div class="left">
-                <h1 style="color: white; margin-left: 180px;">Current Citizens </h1>
+                <h1 style="color: white; margin-left: 180px; font-family: Lato;">Current Citizens</h1>
                 <ul class="ulist">
 
 
@@ -23,20 +23,21 @@
                     <% citizens.forEach(citizen=> { %>
                         <div>
                             <li class="list">
+                                <div class="organize">
+                                    <div class="name">
+                                        <%= citizen.name %>
+                                    </div>
 
-                                <div class="name">
-                                    <%= citizen.name %>
-                                </div>
+                                    <div class="position" style="color: white;">
+                                        <%= citizen.formerRole %>
+                                    </div>
+                                    <div class="rating">
+                                        <%= '⭐️' .repeat(citizen.rating) %>
+                                    </div>
 
-                                <div style="color: white;">
-                                    <%= citizen.formerRole %>
+                                    <a href="/citizens/<%= citizen._id %>" class="lin" style=" font-size: 18px;">View
+                                        Profile</a>
                                 </div>
-                                <div>
-                                    <%= '⭐️' .repeat(citizen.rating) %>
-                                </div>
-
-                                <a href="/citizens/<%= citizen._id %>" class="links"
-                                    style="background-color:#2B342D; font-size: 18px;">View Profile</a>
                             </li>
                         </div>
 
@@ -46,9 +47,7 @@
                 </ul>
             </div>
 
-            <a href="/citizens/new"
-                style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Add New
-                Citizen</a>
+            <a href="/citizens/new" class="addnews" >Add New Citizen </a>
 
         </aside>
         <main>
@@ -56,7 +55,7 @@
             <div class="right">
 
                 <div>
-                    <a href="/unicorns">Current Citizens</a>
+                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
 
                 </div>
                 <div>

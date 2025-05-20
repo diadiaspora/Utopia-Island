@@ -18,16 +18,16 @@
             <div class="left">
                 <div class="forms">
                     <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST" class="getin">
-                        <h1>
+                        <h1 style="color: white; margin-bottom: 0px;" class="showname">
                             <%= citizen.name %>
                         </h1>
                         <div class="rolediv">
-                            <div>
+                            <div class="inside">
                                 <label for="formerRole"> Former Role:</label>
                                 <input type="text" name="formerRole" id="formerRole"
                                     value="<%= citizen.formerRole %>" />
                             </div>
-                            <div>
+                            <div class="sec">
                                 <label for="currentRole"> Current Role:</label>
                                 <input type="text" name="currentRole" id="currentRole"
                                     value="<%= citizen.currentRole %>" />
@@ -43,26 +43,29 @@
 
 
                         <div class="rolediv">
-                            <button type="submit">Update Citizen</button>
+
                             <form action="/citizens/<%=citizen._id%>?_method=DELETE" method="POST">
                                 <button type="submit">Delete <%= citizen.name %></button>
+                                <button type="submit">Update Citizen</button>
                         </div>
                     </form>
                     </form>
                 </div>
             </div>
-
+            <a href="/citizens" class="back">Back to Current Citizens </a>
         </aside>
         <main>
 
             <div class="right">
 
                 <div>
-                    <a href="/unicorns">Current Citizens</a>
+                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px; margin-top: 0px;">Current Citizens
+                    </h2>
                 </div>
-            </div>
-            <div>
-                <%- include('../partials/list.ejs') %>
+
+                <div>
+                    <%- include('../partials/list.ejs') %>
+                </div>
             </div>
 
         </main>

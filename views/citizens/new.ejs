@@ -14,44 +14,43 @@
 
         </header>
 
-        <aside class="margin">
+        <aside style="margin-top: 68px;">
             <div class="left">
-                <div class="forms">
+                <div class="formss">
                     <form action="/citizens" method="POST" class="getin">
                         <label for="name">Name:</label>
                         <input type="text" name="name" id="name" />
-<div class="rolediv"> 
-    <div> 
-                        <label for="formerRole"> Former Role:</label>
-                        <input type="text" name="formerRole" id="formerRole" />
-                                  </div>
-                                  <div> 
-                        <label for="currentRole"> Current Role:</label>
-                        <input type="text" name="currentRole" id="currentRole" />
-                    </div>
-                                  </div>
+                        <div class="rolediv">
+                            <div class="inside">
+                                <label for="formerRole"> Former Role:</label>
+                                <input type="text" name="formerRole" id="formerRole" />
+                            </div>
+                            <div class="sec">
+                                <label for="currentRole"> Current Role:</label>
+                                <input type="text" name="currentRole" id="currentRole" />
+                            </div>
+                        </div>
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
                         <input type="text" name="reason" id="reason" />
 
                         <label for="rating"> Rating:</label>
                         <input type="number" name="rating" id="rating" />
-                     
+
                         <button type="submit" class="rightbutt">Add Citizen</button>
-                    </form>              
+                    </form>
                 </div>
             </div>
-           
+            <a href="/citizens" class="back">Back to Current Citizens </a>
         </aside>
         <main>
 
             <div class="right">
 
                 <div>
-                    <a href="/unicorns">Current Citizens</a>
-
+                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
                 </div>
                 <div>
-              
+
                     <%- include('../partials/list.ejs') %>
                 </div>
             </div>

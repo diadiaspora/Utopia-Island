@@ -17,37 +17,38 @@
         <aside class="margin">
             <div class="left">
                 <div class="card">
-                    <div style="color: white;">
+                    <div style="color: white; margin-bottom: 20px;" class="showname">
                         <%= citizen.name %>
                     </div>
-                    <div class="rolediv">
-                        <div>
-                            <p> Former Role</p>
+                    <div class="rolediv" style="margin-bottom: 30px;">
+                        <div >
+                            <p class="formrole"> Former Role</p>
                             <div style="color: white;">
                                 <%= citizen.formerRole %>
                             </div>
                         </div>
                         <div>
-                            <p> Former Role</p>
+                            <p class="currrole"> Current Role</p>
                             <div style="color: white;">
                                 <%= citizen.currentRole %>
                             </div>
                         </div>
                     </div>
-                    <div style="color: white;">
+                    <div style="color: white; font-size: 16px; height: 150px;">
+                        <p class="currrole"> Reason for Citizenship </p>
                         <%= citizen.reason %>
                     </div>
 
                     <div>
+                        <p class="currrole"> Review </p>
                         <%= '⭐️' .repeat(citizen.rating) %>
                     </div>
                 </div>
             </div>
             <div>
+                
 
-                <a href="/citizens/<%= citizen._id %>/edit"
-                    style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">Edit <%=
-                        citizen.name %></a>
+                <a href="/citizens/<%= citizen._id %>/edit" class="edit">Edit <%=citizen.name %></a>
             </div>
 
         </aside>
@@ -56,13 +57,13 @@
             <div class="right">
 
                 <div>
-                    <a href="/unicorns">Current Citizens</a>
+                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
 
                 </div>
                 <div>
-
-
-
+                    <div>
+                        <%- include('../partials/list.ejs') %>
+                    </div>
                 </div>
             </div>
 

@@ -21,12 +21,20 @@ router.get("/new", async (req, res) => {
 router.get("/:citizenId", async (req, res) => {
   const foundCitizen = await Citizen.findById(req.params.citizenId);
   const allCitizens = await Citizen.find({});
-  res.render("citizens/show.ejs", { citizen: foundCitizen });
+  res.render("citizens/show.ejs", {
+    citizen: foundCitizen,
+    citizens: allCitizens,
+  });
 });
 
 router.get("/:citizenId/edit", async (req, res) => {
   const foundCitizen = await Citizen.findById(req.params.citizenId);
-  res.render("citizens/edit.ejs", { citizen: foundCitizen });
+  const allCitizens = await Citizen.find({});
+  console.log(allCitizens);
+  res.render("citizens/edit.ejs", {
+    citizen: foundCitizen,
+    citizens: allCitizens,
+  });
 });
 
 router.post("/", async (req, res) => {
@@ -36,7 +44,7 @@ router.post("/", async (req, res) => {
 
 router.put("/:citizenId", async (req, res) => {
   await Citizen.findByIdAndUpdate(req.params.citizenId, req.body);
-  
+
   res.redirect("/citizens");
 });
 

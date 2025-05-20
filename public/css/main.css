@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -103,8 +105,8 @@ nav{
   background-color: black;
 }
 
-a:link, a:visited {
-  background-color: #DEFCAB;
+/* a:link, a:visited { */
+  /* background-color: #DEFCAB;
   color: black;
   margin-top: 16px;
   margin-right: 20px;
@@ -112,12 +114,12 @@ a:link, a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px;
-}
+  border-radius: 15px; */
+/* } */
 
-a:hover, a:active {
-  background-color: #DEFCAB;
-}
+/* a:hover, a:active { */
+  /* background-color: #DEFCAB; */
+/* } */
 
 .image {
   width: 300px;
@@ -160,8 +162,20 @@ form * {
   border-color: #525E4F;
   padding: 20px ;
   border-radius: 20px;
+  height: 445px;
+  
 }
 
+.formss {
+  background-color: #2B342D;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #525E4F;
+  padding: 20px ;
+  border-radius: 20px;
+  height: 418px;
+  
+}
 input {
   width: 100%;
 }
@@ -170,11 +184,7 @@ input {
   grid-template-columns: auto auto;
 }
 
-.name {
-  font-weight: bold;
-  font-size: 32;
-  color: white;
-}
+
 
 a .profile {
   background-color: none;
@@ -206,7 +216,7 @@ height: 175px;
 }
 
 .list {
-    scroll-snap-align: center;
+    scroll-snap-align: center; 
 }
 
 .list:nth-child(even) {
@@ -220,7 +230,7 @@ height: 175px;
 }
 
 .list {
-  scroll-snap-align: center;
+  scroll-snap-align: center; 
 }
 
 .ulist::scroll-button(*) {
@@ -285,13 +295,34 @@ height: 175px;
   display: flex;
   flex-direction: column;
   max-width: 550px;
+  height: 445px;
  
 }
 
 .up {
-  margin-right: 150px;
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; */
+ 
 }
 
+.in {
+ background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; 
+}
 .getin {
  
     display: flex;
@@ -318,17 +349,157 @@ height: 175px;
 
 .links {
   width: 50px;
+ 
 }
 
 .citlist {
- 
   background-color: none;
   color: black;
-  margin-top: 0px;
-  margin-right: 0px;
-  padding: 0px;
-  text-align: lest;
-  text-decoration: underline;
+  text-align: left;
+  text-decoration: none;
+  font-family: Lato, sans-serif;
+}
 
-  border-radius: 0px;
+.citlink {
+
+  text-decoration: none;
+  color: black;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+ 
+}  
+
+.citlist a:hover {
+
+  color:rgb(91, 91, 91) ;
+ 
+}
+
+
+
+.inside {
+  margin-left: -12px;
+}
+
+.sec {
+  margin-right: -12px;
+}
+
+.organize {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr
+  grid-template-areas: 
+  "name name "  /* <- place area names in rows and cols as you want them displayed */
+  "position position "
+  "rating rating "
+  "lin lin" ;
+  
+}
+
+.position {
+  background-color: chocolate;
+  
+  /* grid-area: position;  */
+}
+
+.lin {
+  background-color: darkorchid;
+/* grid-area: lin;  */
+}
+
+.rating {
+  background-color: firebrick;
+  /* grid-area: rating; */
+   } 
+
+.name {
+  font-weight: bold;
+  font-size: 32;
+  color: white;
+  background-color: aquamarine;
+   /* grid-area: name;  */
+}
+
+.bottom {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 215px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; */
+}
+
+.addnew {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 213px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; */
+}
+
+.addnews {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+ 
+  padding: 8px 198px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; 
+ text-align: center; 
+ margin-left: 12px;
+ 
+
+}
+
+.edit {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-left: 12px;
+  padding: 8px 206px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; 
+}
+
+.back {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-left: 15px;
+  padding: 8px 165px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; 
+}
+
+.showname {
+  font-style: lato, sans-serif;
+  font-size: 32px;
+}
+
+.formrole {
+  font-style: lato, sans-serif;
+  color:#DEFCAB;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.currrole {
+  font-style: lato, sans-serif;
+  color:#DEFCAB;
+  font-size: 16px;
+  margin-bottom: 6px;
 }
