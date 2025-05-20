@@ -12,7 +12,6 @@
             </div>
 
         </header>
-
         <aside class="margin">
             <div class="left">
                 <h1 style="color: white; margin-left: 180px; font-family: Lato;">Current Citizens</h1>
@@ -28,11 +27,11 @@
                                         <%= citizen.name %>
                                     </div>
 
-                                    <div class="position" style="color: white;">
-                                        <%= citizen.formerRole %>
+                                    <div class="position" style="color: rgb(184, 184, 184);">
+                                        <%= citizen.currentRole %>
                                     </div>
-                                    <div class="rating">
-                                        <%= '⭐️' .repeat(citizen.rating) %>
+                                    <div class="rating" style="">
+                                         <p style="font-size: 12px;  color: rgb(184, 184, 184);">Rating <%= '⭐️' .repeat(citizen.rating) %> </p>
                                     </div>
 
                                     <a href="/citizens/<%= citizen._id %>" class="lin" style=" font-size: 18px;">View

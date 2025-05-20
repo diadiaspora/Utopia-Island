@@ -8,6 +8,7 @@ body {
   background-color: black;
   display: flex;
   flex-direction: row;
+  font-family: Lato, sans-serif;
 
   margin: 40px;
   justify-content: center;
@@ -45,6 +46,7 @@ nav {
   align-items: flex-start;
  justify-content: right;
  margin-right: -20px;
+ font-family: Lato, sans-serif;
 }
 
 aside {
@@ -53,6 +55,7 @@ aside {
   font-size: 18px;
   margin-right: 40px;
   width: 550px;
+  font-family: Lato, sans-serif;
   
 }
 
@@ -62,6 +65,7 @@ aside {
 
 p {
   color: white;
+  font-family: Lato, sans-serif;
 }
 .utopia {
   max-width: 1920px;
@@ -70,7 +74,7 @@ p {
   /* three rows defined here */
   grid-template-columns: 2fr 1fr;
   /* two columns defined here */
-  font-family: "Cal Sans", sans-serif;
+  font-family: Lato, sans-serif;
   /* height: 100%; */
 }
 
@@ -78,6 +82,7 @@ p {
   margin-top: -45px;
   background-color: black;
   width: 550px;
+  font-family: Lato, sans-serif;
 }
 /* main {
      
@@ -93,16 +98,18 @@ p {
   height: 475px;
   margin-bottom: 20px;
   border-radius: 20px;
+  font-family: Lato, sans-serif;
 }
 
 footer {
   color: white;
- ;
+  font-family: Lato, sans-serif;
 }
 
 nav{
   
   background-color: black;
+  font-family: Lato, sans-serif;
 }
 
 /* a:link, a:visited { */
@@ -133,10 +140,12 @@ nav{
 
 label {
   color: white;
+  font-family: Lato, sans-serif;
 }
 
 .form {
   color: white;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -146,12 +155,14 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2vmin;
+  font-family: Lato, sans-serif;
 }
 
 form * {
   font-size: 2vmin;
   padding: 1vmin;
   border-radius: 1vmin;
+  font-family: Lato, sans-serif;
   
 }
 
@@ -162,7 +173,8 @@ form * {
   border-color: #525E4F;
   padding: 20px ;
   border-radius: 20px;
-  height: 445px;
+  height: 423px;
+  font-family: Lato, sans-serif;
   
 }
 
@@ -173,11 +185,13 @@ form * {
   border-color: #525E4F;
   padding: 20px ;
   border-radius: 20px;
-  height: 418px;
+  height: 423px;
+  font-family: Lato, sans-serif;
   
 }
 input {
   width: 100%;
+  font-family: Lato, sans-serif;
 }
 .sign {
   display: grid;
@@ -210,8 +224,9 @@ a .profile {
   border: 10px solid #525E4F;
   padding: 20px;
 border-radius: 20px;
-columns: 2;
+columns: 1;
 height: 175px;
+width: 250px;
 
 }
 
@@ -238,14 +253,14 @@ height: 175px;
   border-radius: 20px;
   font-size: 2rem;
   background: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
   cursor: pointer;
 }
 
 .ulist::scroll-button(*):hover,
 .ulist::scroll-button(*):focus {
   border-radius: 20px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .ulist::scroll-button(*):active {
@@ -253,7 +268,7 @@ height: 175px;
 }
 
 .ulist::scroll-button(*):disabled {
-  color: rgba(0, 0, 0, 0.2);
+  color: white;
   cursor: unset;
   border-radius: 20px;
 }
@@ -290,12 +305,14 @@ height: 175px;
   border-radius: 20px;
   border-style: solid;
   border-width: 10px;
-  padding: 20px;
   border-color: #525E4F;
   display: flex;
   flex-direction: column;
   max-width: 550px;
-  height: 445px;
+  height: 423px;
+  padding: 20px;
+  margin-top: 20px;
+ 
  
 }
 
@@ -387,46 +404,54 @@ height: 175px;
 
 .organize {
   display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr
-  grid-template-areas: 
-  "name name "  /* <- place area names in rows and cols as you want them displayed */
-  "position position "
-  "rating rating "
-  "lin lin" ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+ 
+
   
 }
 
 .position {
-  background-color: chocolate;
-  
+ 
+  font-size: 14px;
+  color: #838383;
+  margin-top: 4px;
+  margin-bottom: -10px;
   /* grid-area: position;  */
 }
 
 .lin {
-  background-color: darkorchid;
-/* grid-area: lin;  */
+
+text-align: right;
+font-size: 22px;
+margin-bottom: 0px;
+color: #DEFCAB;
 }
 
 .rating {
-  background-color: firebrick;
+  color: rgb(184, 184, 184);
+  margin-top: -10px;
+  margin-bottom: 10px;
   /* grid-area: rating; */
    } 
 
 .name {
   font-weight: bold;
-  font-size: 32;
+  font-size: 22px;
   color: white;
-  background-color: aquamarine;
-   /* grid-area: name;  */
+ 
+  
+ 
+  
 }
 
 .bottom {
   background-color: #DEFCAB;
   color: black;
   margin-top: 16px;
-  margin-right: 20px;
-  padding: 8px 215px;
+  
+  width: 560px;
+  padding: 8px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -437,8 +462,9 @@ height: 175px;
   background-color: #DEFCAB;
   color: black;
   margin-top: 16px;
-  margin-right: 20px;
-  padding: 8px 213px;
+
+  width: 560px;
+  padding: 8px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -448,15 +474,15 @@ height: 175px;
 .addnews {
   background-color: #DEFCAB;
   color: black;
-  margin-top: 16px;
- 
-  padding: 8px 198px;
+  margin-top: 64px;
+  width: 560px;
+  padding: 8px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 15px; 
  text-align: center; 
- margin-left: 12px;
+
  
 
 }
@@ -465,8 +491,9 @@ height: 175px;
   background-color: #DEFCAB;
   color: black;
   margin-top: 16px;
-  margin-left: 12px;
-  padding: 8px 206px;
+  
+  width: 560px;
+  padding: 8px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -477,17 +504,32 @@ height: 175px;
   background-color: #DEFCAB;
   color: black;
   margin-top: 16px;
-  margin-left: 15px;
-  padding: 8px 165px;
+
+  width: 560px;
+  padding: 8px ;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border-radius: 15px; 
 }
 
+.frontpage {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 42px;
+  width: 560px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; 
+ 
+}
+
 .showname {
   font-style: lato, sans-serif;
   font-size: 32px;
+  margin-top: -8px;
 }
 
 .formrole {
@@ -502,4 +544,16 @@ height: 175px;
   color:#DEFCAB;
   font-size: 16px;
   margin-bottom: 6px;
+}
+
+.notengo {
+  background-color: #DEFCAB;
+  color: black;
+  margin-top: 16px;
+  margin-right: 20px;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px; */
 }

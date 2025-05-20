@@ -55,8 +55,13 @@ app.use("/citizens", citizensController);
 
 // GET / (root/default) -> Home Page
 app.get("/", async (req, res) => {
+  const foundCitizen = await Citizen.findById(req.params.citizenId);
+  const allCitizens = await Citizen.find({});
  
-  res.render("home.ejs");
+  res.render("home.ejs", {
+    citizen: foundCitizen,
+    citizens: allCitizens,
+  });
 });
 
 

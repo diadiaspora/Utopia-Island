@@ -14,11 +14,12 @@
 
         </header>
 
-        <aside style="margin-top: 68px;">
+        <aside >
             <div class="left">
+                <h2 style="color: white; margin-bottom: 8px;"> Add a New Citizen</h2>
                 <div class="formss">
                     <form action="/citizens" method="POST" class="getin">
-                        <label for="name">Name:</label>
+                        <label for="name" style="margin-bottom: -15px;">Name:</label>
                         <input type="text" name="name" id="name" />
                         <div class="rolediv">
                             <div class="inside">
@@ -30,13 +31,18 @@
                                 <input type="text" name="currentRole" id="currentRole" />
                             </div>
                         </div>
-                        <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
-                        <input type="text" name="reason" id="reason" />
+                        <label for="reason" style="margin-bottom: -12px;"> Reason why this person was chosen for Utopia Island:</label>
+                        <textarea type="text" name="reason" id="reason"></textarea>
 
-                        <label for="rating"> Rating:</label>
-                        <input type="number" name="rating" id="rating" />
+                        <label for="rating" style="margin-bottom: -12px;">Select a rating:</label>
+                        <select name="rating" id="rating">
+                            <option value="1">⭐️</option>
+                            <option value="2">⭐️⭐️</option>
+                            <option value="3">⭐️⭐️⭐️</option>
+                            <option value="4">⭐️⭐️⭐️⭐️</option>
+                            <option value="5" selected>⭐️⭐️⭐️⭐️⭐️</option>     </select>
 
-                        <button type="submit" class="rightbutt">Add Citizen</button>
+                        <button type="submit" class="rightbutt" style="margin-top: 20px;">Add Citizen</button>
                     </form>
                 </div>
             </div>

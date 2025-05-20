@@ -10,62 +10,61 @@
             <div>
                 <%- include('./partials/buttons.ejs') %>
             </div>
-
         </header>
 
-        <aside>
-            <div class="left" style="margin-bottom: 150px;"> >
-                <p style="color: #DEFCAB; "> The current year is Zed...</p>
-                <p style="color: #DEFCAB"> You have been provided with the last (and first)
-                    Island in this edition of humanity. </p>
-                <p style="color: #DEFCAB"> In addition to your personal circle,</p>
-                <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former edition of
-                    humanity</p>
-                <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
-                <ul style="color:white; font-weight: bold; font-size: 20px;">
-                    <li> ‘Living‘ or ‘dead’ </li>
-                    <li> Fictional or non fictional</li>
-                    <li> Historical figures or everyday celebrities</li>
-                </ul>
-                <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
-                    You can delete them or change their role in the new society</p>
-                <div style="display: flex; align-items: center; justify-content: center;  margin-top: 30px;">
-                    <button href="/auth/sign-in" class="bottom">Review Citizens</button>
-                </div>
-            </div>
+        <div>
+            <aside>
+                <div class="left" style="margin-bottom: 150px; margin-top: -18px;"> >
+                    <p style="color: #DEFCAB; "> The current year is Zed...</p>
+                    <p style="color: #DEFCAB"> You have been provided with the last (and first)
+                        Island in this edition of humanity. </p>
+                    <p style="color: #DEFCAB"> In addition to your personal circle,</p>
+                    <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former edition
+                        of
+                        humanity</p>
+                    <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
+                    <ul style="color:white; font-weight: bold; font-size: 20px;">
+                        <li> ‘Living‘ or ‘dead’ </li>
+                        <li> Fictional or non fictional</li>
+                        <li> Historical figures or everyday celebrities</li>
+                    </ul>
+                    <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
+                        You can delete them or change their role in the new society</p>
+                    <div>
+                        <div>
 
-        </aside>
+                            <% if (user) { %>
+
+
+                                <a href="/citizens" class="frontpage">Review Citizens</a>
+                        </div>
+
+                        <% } else { %>
+
+                            <div>
+
+                                <a href="/auth/sign-in" class="frontpage">Review Citizens</a>
+                            </div>
+
+                            <% } %>
+                    </div>
+
+                </div>
+            </aside>
+        </div>
+
+       
         <main>
 
             <div class="right">
 
                 <div>
-                   <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;" >Current Citizens</h2>
+                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens
+                    </h2>
 
                 </div>
                 <div>
-                    <ol>
-                        <li> Cleopatra </li>
-                        <li> Leonardo Davinci </li>
-                        <li> Ghandi </li>
-                        <li> James Brown </li>
-                        <li> Greta Thornburg </li>
-                        <li> Charles Darwin </li>
-                        <li> Rocky Balboa </li>
-                        <li> Lady Gaga </li>
-                        <li> Anthony Bordain </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                    </ol>
+                    <%- include('./partials/list.ejs')%>
                 </div>
 
             </div>

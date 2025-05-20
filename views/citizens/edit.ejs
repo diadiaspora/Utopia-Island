@@ -37,8 +37,14 @@
                         <label for="reason"> Reason why this person was chosen for Utopia Island:</label>
                         <input type="text" name="reason" id="reason" value="<%= citizen.reason %>" />
 
-                        <label for="rating"> Rating:</label>
-                        <input type="number" name="rating" id="rating" />
+                        <label for="rating" style="margin-bottom: -12px;">Select a rating:</label>
+                        <select name="rating" style="background-color: rgb(121, 121, 121);">
+                            <option value="1">⭐️</option>
+                            <option value="2">⭐️⭐️</option>
+                            <option value="3">⭐️⭐️⭐️</option>
+                            <option value="4">⭐️⭐️⭐️⭐️</option>
+                            <option value="5" selected>⭐️⭐️⭐️⭐️⭐️</option>
+                        </select>
 
 
 
