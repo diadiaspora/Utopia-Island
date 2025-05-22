@@ -14,35 +14,38 @@
 
         </header>
 
-        <aside >
+        <aside>
             <div class="left">
-                <h2 style="color: white; margin-bottom: 8px;"> Add a New Citizen</h2>
+                <h2 style="color: white; margin-bottom: 8px; margin-top: 5px;"> Add a New Citizen</h2>
                 <div class="formss">
                     <form action="/citizens" method="POST" class="getin">
-                        <label for="name" style="margin-bottom: -15px;">Name:</label>
-                        <input type="text" name="name" id="name" />
-                        <div class="rolediv">
+                        <label for="name" style="margin-bottom: -15px; margin-top: -20px;">Name:</label>
+                        <input type="text" name="name" id="name" style="margin-top: -5px;" />
+
+                        <div class="rolediv" style="margin-top: -10px;">
                             <div class="inside">
                                 <label for="formerRole"> Former Role:</label>
-                                <input type="text" name="formerRole" id="formerRole" />
+                                <input type="text" name="formerRole" id="formerRole" style="margin-top: 4px;" />
                             </div>
                             <div class="sec">
                                 <label for="currentRole"> Current Role:</label>
-                                <input type="text" name="currentRole" id="currentRole" />
+                                <input type="text" name="currentRole" id="currentRole" style="margin-top: 4px;" />
                             </div>
                         </div>
-                        <label for="reason" style="margin-bottom: -12px;"> Reason why this person was chosen for Utopia Island:</label>
-                        <textarea type="text" name="reason" id="reason"></textarea>
+                        <label for="reason" style="margin-bottom: -12px; margin-top: -20px;"> Reason why this person was
+                            chosen for Utopia Island:</label>
+                        <textarea type="text" name="reason" id="reason" style="margin-top: -5px;"></textarea>
 
-                        <label for="rating" style="margin-bottom: -12px;">Select a rating:</label>
+                        <label for="rating" style="margin-bottom: -17px; margin-top: -4px;">Select a rating:</label>
                         <select name="rating" id="rating">
                             <option value="1">⭐️</option>
                             <option value="2">⭐️⭐️</option>
                             <option value="3">⭐️⭐️⭐️</option>
                             <option value="4">⭐️⭐️⭐️⭐️</option>
-                            <option value="5" selected>⭐️⭐️⭐️⭐️⭐️</option>     </select>
+                            <option value="5" selected>⭐️⭐️⭐️⭐️⭐️</option>
+                        </select>
 
-                        <button type="submit" class="rightbutt" style="margin-top: 20px;">Add Citizen</button>
+                        <button type="submit" class="rightbutt" style="margin-top: 0px;">Add Citizen</button>
                     </form>
                 </div>
             </div>
@@ -52,8 +55,8 @@
 
             <div class="right">
 
-                <div>
-                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
+                <div class="citizen">
+                    <a href="/citizens" class="citizen"> Current Citizens </a>
                 </div>
                 <div>
 

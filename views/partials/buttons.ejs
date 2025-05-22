@@ -5,25 +5,28 @@
         <% if (user) { %>
             <audio controls autoplay>
 
-                <source src="audio/audio.mp3" type="audio/mpeg"> 
+                <source src="audio/audio.mp3" type="audio/mpeg">
             </audio>
 
 
-          <div class="butt"> 
-                <p style=""> You are signed in, <%= user.name %></p>
-                <a href="/auth/sign-out" style="padding-top: 15px; margin-right: 23px; margin-left: 20px; underline; color:#DEFCAB">SIGN OUT</a>
+            <div class="butt">
+                <p style=""> You are signed in, <%= user.name %>
+                </p>
+                <a href="/auth/sign-out"
+                    style="padding-top: 15px; margin-right: 23px; margin-left: 20px; underline; color:#DEFCAB">SIGN
+                    OUT</a>
             </div>
-            
+
             <% } else { %>
 
                 <audio controls autoplay>
 
                     <source src="audio/audio.mp3" type="audio/mpeg">
                 </audio>
-                <div class="butt"> 
+                <div class="butt">
                     <p style="padding-top: 10px; margin-right: 10px;"> Get started..</p>
-                <a href="/auth/sign-up" class="up">SIGN UP</a>
-                <a href="/auth/sign-in" class="in">SIGN IN</a>
+                    <a href="/auth/sign-up" class="up">SIGN UP</a>
+                    <a href="/auth/sign-in" class="in">SIGN IN</a>
                 </div>
                 <% } %>
     </div>

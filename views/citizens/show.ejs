@@ -20,45 +20,49 @@
                     <div style="color: white; margin-bottom: 20px; " class="showname">
                         <%= citizen.name %>
                     </div>
-                    <div class="rolediv" style="margin-bottom: 30px;">
-                        <div >
+                    <div class="rolediv" style="margin-bottom: 30px; margin-top: -15px;">
+                        <div>
                             <p class="formrole"> Former Role</p>
                             <div style="color: white;">
                                 <%= citizen.formerRole %>
                             </div>
                         </div>
-                        <div>
-                            <p class="currrole"> Current Role</p>
-                            <div style="color: white;">
+                        <div style="margin-left: -50px;">
+                            <p class="currrole" style="margin-left: -250px;"> Current Role</p>
+                            <div style="color: white; margin-left: -250px;">
                                 <%= citizen.currentRole %>
                             </div>
                         </div>
                     </div>
-                    <div style="color: white; font-size: 16px; height: 150px;">
-                        <p class="currrole"> Reason for Citizenship </p>
+                    <div style="color: white; font-size: 16px; height: 100px;">
+                        <p class="currrole" style="margin-top: -5px;"> Reason for Citizenship </p>
                         <%= citizen.reason %>
                     </div>
 
                     <div>
-                        <p class="currrole"> Review </p>
+                        <p class="currrole" style="margin-top: 28px;"> Review </p>
                         <%= '⭐️' .repeat(citizen.rating) %>
                     </div>
+                    <div style="display:flex;  padding-top: 32px; ">
+                        <form action="/citizens/<%=citizen._id%>?_method=DELETE" method="POST">
+                            <button type="submit" style="margin-left: 300px; width: 200px; ">Delete <%= citizen.name %>
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div>
-                
+                <div>
 
-                <a href="/citizens/<%= citizen._id %>/edit" class="edit">Edit <%=citizen.name %></a>
-            </div>
+
+                    <a href="/citizens/<%= citizen._id %>/edit" class="edit">Edit <%=citizen.name %></a>
+                </div>
 
         </aside>
         <main>
 
             <div class="right">
 
-                <div>
-                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
-
+                <div class="citizen">
+                    <a href="/citizens" class="citizen"> Current Citizens </a>
                 </div>
                 <div>
                     <div>

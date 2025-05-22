@@ -31,7 +31,9 @@
                                         <%= citizen.currentRole %>
                                     </div>
                                     <div class="rating" style="">
-                                         <p style="font-size: 12px;  color: rgb(184, 184, 184);">Rating <%= '⭐️' .repeat(citizen.rating) %> </p>
+                                        <p style="font-size: 12px;  color: rgb(184, 184, 184);">Rating <%= '⭐️'
+                                                .repeat(citizen.rating) %>
+                                        </p>
                                     </div>
 
                                     <a href="/citizens/<%= citizen._id %>" class="lin" style=" font-size: 18px;">View
@@ -46,16 +48,15 @@
                 </ul>
             </div>
 
-            <a href="/citizens/new" class="addnews" >Add New Citizen </a>
+            <a href="/citizens/new" class="addnews">Add New Citizen </a>
 
         </aside>
         <main>
 
             <div class="right">
 
-                <div>
-                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens</h2>
-
+                <div class="citizen">
+                    <a href="/citizens" class="citizen"> Current Citizens </a>
                 </div>
                 <div>
                     <%- include('../partials/list.ejs') %>

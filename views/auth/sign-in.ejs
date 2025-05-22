@@ -20,11 +20,14 @@
 
               <div>
                 <div class="butt">
-                  <p> You are signed in, <%= user.name %> </p>
+                  <p> You are signed in, <%= user.name %>
+                  </p>
 
-        
-                <a href="/auth/sign-out" style="padding-top: 15px; margin-right: 23px; margin-left: 20px; underline; color:#DEFCAB">SIGN OUT</a>
-              </div>
+
+                  <a href="/auth/sign-out"
+                    style="padding-top: 15px; margin-right: 23px; margin-left: 20px; underline; color:#DEFCAB">SIGN
+                    OUT</a>
+                </div>
               </div>
               <% } else { %>
                 <audio controls autoplay>
@@ -47,7 +50,7 @@
       <div class="sign">
 
 
-        <div class="forms">
+        <div class="formz">
           <h1 class="form">Sign In</h1>
           <form action="/auth/sign-in" method="POST" class="getin">
             <label for="email">Email:</label>

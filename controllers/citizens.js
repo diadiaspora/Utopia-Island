@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
 
 router.get("/new", async (req, res) => {
   const allCitizens = await Citizen.find({});
-
   res.render("citizens/new.ejs", { citizens: allCitizens });
 });
 
@@ -48,8 +47,9 @@ router.put("/:citizenId", async (req, res) => {
   res.redirect("/citizens");
 });
 
-router.delete("/citizens/:citizenId", async (req, res) => {
+router.delete("/:citizenId", async (req, res) => {
   await Citizen.findByIdAndDelete(req.params.citizenId);
+
   res.redirect("/citizens");
 });
 
