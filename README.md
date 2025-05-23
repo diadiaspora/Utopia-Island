@@ -14,11 +14,15 @@
 <div style="display:block; width: 1400px;">
 <img src="./public/images/signin.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
 <img src="./public/images/home.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
-<img src="./public/images/citizens.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
-</div>
 
+</div>
 <div style="display:block; width: 1400px;">
+<img src="./public/images/citizens.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
 <img src="./public/images/show.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
+
+</div>
+<div style="display:block; width: 1400px;">
+
 <img src="./public/images/edit.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
 <img src="./public/images/add.png" alt="Description of Screenshot" style="width: 350px; border-style: solid; border-color: white; border-width: 6px; border-radius: 5px;"/>
 </div>
