@@ -37,10 +37,10 @@
                         <label for="reason" style="margin-bottom: -18px; margin-top: -20px;"> Reason why this person was
                             chosen for Utopia Island:</label>
                         <textarea type="text" name="reason" id="reason"
-                            maxlength="260"> <%= citizen.reason %>  </textarea>
+                            maxlength="260" class="textarea"> <%= citizen.reason %>  </textarea>
 
-                        <label for="rating" style="margin-bottom: -16px;">Select a rating:</label>
-                        <select name="rating" style="background-color: rgb(121, 121, 121);">
+                        <label for="rating" style="margin-bottom: -16px;" class="label">Select a rating:</label>
+                        <select name="rating" style="background-color: rgb(121, 121, 121);" class="selector">
                             <option value="1">⭐️</option>
                             <option value="2">⭐️⭐️</option>
                             <option value="3">⭐️⭐️⭐️</option>
@@ -50,12 +50,12 @@
 
 
 
-                        <div class="rolediv">
+                  
 
 
-                            <button type="submit" style="margin-left: 350px;  ">Update Citizen</button>
+                            <button type="submit" class="updated" >Update Citizen</button>
 
-                        </div>
+                     
 
                     </form>
                 </div>

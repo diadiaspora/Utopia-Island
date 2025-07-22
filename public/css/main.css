@@ -85,6 +85,7 @@ aside {
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
    }
 }
 
@@ -263,6 +264,14 @@ form * {
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .formy {
+    width: 300px;
+ 
+  }
+}
+
+
 .formss {
   background-color: #2B342D;
   border-style: solid;
@@ -274,6 +283,15 @@ form * {
   font-family: Lato, sans-serif;
   
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .formss {
+    height: 323px;
+    width: 250px;
+  
+  }
+}
+
 input {
   width: 100%;
   font-family: Lato, sans-serif;
@@ -323,7 +341,18 @@ a .profile {
     box-sizing: border-box;
   }
 
+  .ulist::-webkit-scrollbar {
+    height: 12px; /* wider scrollbar */
+  }
   
+  .ulist::-webkit-scrollbar-thumb {
+    background: #888; /* or any color you like */
+    border-radius: 6px;
+  }
+  
+  .ulist::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }
 
 .ulist::-webkit-scrollbar {
@@ -445,6 +474,29 @@ width: 250px;
  
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .card {
+   max-width: 300px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   height: 500px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .rev {
+margin-left: -30px;
+margin-bottom: 2px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .delete {
+margin-left: -280px;
+
+  }
+}
+
 .up {
   background-color: #DEFCAB;
   color: black;
@@ -473,7 +525,7 @@ width: 250px;
  
     display: flex;
     flex-direction: column;
-    max-width: 550px; /* optional, controls form width */
+ 
   
 }
 
@@ -487,6 +539,14 @@ width: 250px;
 
 
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .rolediv {
+   max-width: 200px;
+
+  }
+}
+
 
 .align{
   display: flex;
@@ -527,8 +587,22 @@ width: 250px;
   margin-left: -12px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .inside {
+margin-top: 20px;
+margin-bottom: 20px;
+  }
+}
+
 .sec {
   margin-right: -12px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .sec {
+margin-top: 20px;
+margin-bottom: 20px;
+  }
 }
 
 .organize {
@@ -616,6 +690,18 @@ color: #DEFCAB;
 
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .addnews {
+    width: 200px;
+    margin-bottom: 42px;
+    display:flex;
+margin-left: 23%;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
 .edit {
   background-color: #DEFCAB;
   color: black;
@@ -629,6 +715,37 @@ color: #DEFCAB;
   border-radius: 15px; 
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .edit {
+    width: 280px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .textarea {
+  height: 120px;
+
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .label {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .selector {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  }
+}
+
+
 .back {
   background-color: #DEFCAB;
   color: black;
@@ -641,6 +758,17 @@ color: #DEFCAB;
   display: inline-block;
   border-radius: 15px; 
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .back {
+margin-top: 20px;
+margin-bottom: 20px;
+width: 250px;
+margin-left: 55%;
+  }
+}
+
+
 
 .frontpage {
   background-color: #DEFCAB;
@@ -667,6 +795,12 @@ color: #DEFCAB;
   margin-top: -8px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .showname {
+    font-size: 18px;
+  }
+}
+
 .formrole {
   font-style: lato, sans-serif;
   color:#DEFCAB;
@@ -674,12 +808,45 @@ color: #DEFCAB;
   margin-bottom: 6px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .formrole {
+   margin-left: 40px;
+
+
+  }
+}
+
 .currrole {
   font-style: lato, sans-serif;
-  color:#DEFCAB;
+
   font-size: 16px;
   margin-bottom: 6px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .currrole {
+   margin-left: 250px;
+   margin-right: -120px;
+
+
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .review {
+margin-top: 80px;
+display: flex;
+flex-direction: column;
+margin-left: -154px;
+
+
+  }
+}
+
+
+
+
+
 
 .notengo {
   background-color: #DEFCAB;
@@ -701,6 +868,8 @@ color: #DEFCAB;
   font-size: 26px;
   font-weight: bold;
 }
+
+
 
 .citizen a:hover {
 

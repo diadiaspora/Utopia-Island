@@ -21,29 +21,31 @@
                         <%= citizen.name %>
                     </div>
                     <div class="rolediv" style="margin-bottom: 30px; margin-top: -15px;">
-                        <div>
-                            <p class="formrole"> Former Role</p>
+                       
+                        <div class="formrole">
+                            <p style="color:  #DEFCAB"> Former Role</p>
                             <div style="color: white;">
                                 <%= citizen.formerRole %>
                             </div>
                         </div>
-                        <div style="margin-left: -50px;">
-                            <p class="currrole" style="margin-left: -250px;"> Current Role</p>
-                            <div style="color: white; margin-left: -250px;">
+                        <div style="margin-left: -50px;" class="currrole">
+                            <p  style="margin-left: -250px; color:  #DEFCAB;"> Current Role</p>
+                            <div  style="color: white; margin-left: -250px;">
                                 <%= citizen.currentRole %>
                             </div>
                         </div>
+                    
                     </div>
                     <div style="color: white; font-size: 16px; height: 100px;">
-                        <p class="currrole" style="margin-top: -5px;"> Reason for Citizenship </p>
+                        <p  style="margin-top: -5px; color:  #DEFCAB; "> Reason for Citizenship </p>
                         <%= citizen.reason %>
                     </div>
 
-                    <div>
-                        <p class="currrole" style="margin-top: 28px;"> Review </p>
+                    <div class="review">
+                        <p  class="rev" style="margin-top: 28px;"> Review </p>
                         <%= '⭐️' .repeat(citizen.rating) %>
                     </div>
-                    <div style="display:flex;  padding-top: 32px; ">
+                    <div style="display:flex;  padding-top: 32px; " class="delete">
                         <form action="/citizens/<%=citizen._id%>?_method=DELETE" method="POST">
                             <button type="submit" style="margin-left: 300px; width: 200px; ">Delete <%= citizen.name %>
                             </button>
