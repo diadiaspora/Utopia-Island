@@ -14,39 +14,47 @@
 
         <div>
             <aside>
-                <div class="left" style="margin-bottom: 150px; margin-top: -18px;"> >
-                    <p style="color: #DEFCAB; "> The current year is Zed...</p>
-                    <p style="color: #DEFCAB"> You have been provided with the last (and first)
-                        Island in this edition of humanity. </p>
-                    <p style="color: #DEFCAB"> In addition to your personal circle,</p>
-                    <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former edition
-                        of
-                        humanity</p>
-                    <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
-                    <ul style="color:white; font-weight: bold; font-size: 20px;">
-                        <li> ‘Living‘ or ‘dead’ </li>
-                        <li> Fictional or non fictional</li>
-                        <li> Historical figures or everyday celebrities</li>
-                    </ul>
-                    <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
-                        You can delete them or change their role in the new society</p>
-                    <div>
-                        <div>
 
-                            <% if (user) { %>
+                <div class="left" style="margin-top: -18px;">
+                    <div class="hide-on-mobile">
+                        <p style="color: #DEFCAB; "> The current year is Zed...</p>
+                        <p style="color: #DEFCAB"> You have been provided with the last (and first)
+                            Island in this edition of humanity. </p>
+                        <p style="color: #DEFCAB"> In addition to your personal circle,</p>
+                        <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former
+                            edition
+                            of
+                            humanity</p>
+                        <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
+                        <ul style="color:white; font-weight: bold; font-size: 20px;">
+                            <li> ‘Living‘ or ‘dead’ </li>
+                            <li> Fictional or non fictional</li>
+                            <li> Historical figures or everyday celebrities</li>
+                        </ul>
+                        <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
+                            You can delete them or change their role in the new society</p>
+                    </div>
+                    <div class="show-on-mobile" style="color: white;">
+                        If you had your own private island. Who would you invite, outside og your personal circle? It can be celebrities living or dead.
+                    </div>
+
+                    <div class="review">
+                        <% if (user) { %>
+                            <div>
+
 
 
                                 <a href="/citizens" class="frontpage">Review Citizens</a>
-                        </div>
-
-                        <% } else { %>
-
-                            <div>
-
-                                <a href="/auth/sign-in" class="frontpage">Review Citizens</a>
                             </div>
 
-                            <% } %>
+                            <% } else { %>
+
+                                <div>
+
+                                    <a href="/auth/sign-in" class="frontpage">Review Citizens</a>
+                                </div>
+
+                                <% } %>
                     </div>
 
                 </div>
@@ -59,7 +67,7 @@
             <div class="right">
 
                 <div>
-                    <h2 style="font-family: Lato; sans-serif; text-align: center; padding-top: 10px;">Current Citizens
+                    <h2 style="font-family: Lato, sans-serif; text-align: center; padding-top: 10px;">Current Citizens
                     </h2>
 
                 </div>

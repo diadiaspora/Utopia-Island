@@ -14,6 +14,15 @@ body {
   justify-content: center;
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+   max-width: 480px;
+   display: flex;
+   flex-direction: column;
+  }
+}
+
 header {
   color: white;
   grid-column: span 2;
@@ -23,6 +32,15 @@ header {
   padding-bottom: 40px;
   grid-template-columns: 2fr 1fr;
   background-color: black;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+   max-width: 480px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
 }
 
 .header {
@@ -41,6 +59,8 @@ nav {
   justify-content: space-around;
 }
 
+
+
 .butt {
   display: flex;
   align-items: flex-start;
@@ -58,10 +78,30 @@ aside {
   font-family: Lato, sans-serif;
   
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  aside {
+    font-size: 16px;
+    max-width: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+}
 
 .margin {
   margin-top: 43px;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .margin {
+  
+  
+    display:flex;
+    flex-direction: column;;
+    /* justify-content: center;
+    align-items: center; */
+   }
+}
+
 
 p {
   color: white;
@@ -78,20 +118,38 @@ p {
   /* height: 100%; */
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .utopia {
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+
 .left {
   margin-top: -45px;
   background-color: black;
   width: 550px;
   font-family: Lato, sans-serif;
+  margin-bottom: 150px;
 }
-/* main {
-     
-      border-radius: 20px;
-      margin-left: 20px;
-      margin-top: 40px;
-      height: 1000px;
-      padding: 20px;
-    } */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .left {
+    font-size: 16px;
+    max-width: 400px;
+    margin: 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70%;
+    margin-bottom: 0px;
+   
+   }
+}
+
 
 .right {
   background-color: #DEFCAB;
@@ -99,6 +157,17 @@ p {
   margin-bottom: 20px;
   border-radius: 20px;
   font-family: Lato, sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .right {
+    font-size: 16px;
+    max-width: 400px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+   
+   }
 }
 
 footer {
@@ -112,21 +181,6 @@ nav{
   font-family: Lato, sans-serif;
 }
 
-/* a:link, a:visited { */
-  /* background-color: #DEFCAB;
-  color: black;
-  margin-top: 16px;
-  margin-right: 20px;
-  padding: 8px 14px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 15px; */
-/* } */
-
-/* a:hover, a:active { */
-  /* background-color: #DEFCAB; */
-/* } */
 
 .image {
   width: 300px;
@@ -235,6 +289,55 @@ a .profile {
   display: flex;
   gap: 4vw;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ulist {
+    display: flex;
+    overflow-x: auto;
+    height: 220px;
+    margin: 16px;
+    max-width: 350px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+
+    padding: 0 16px;
+    margin: 0;
+    /* margin: 16px;
+   
+    flex-direction: column;
+   
+    
+    margin-left: 70%;
+    margin-bottom: 0px; */
+   
+   }
+
+   .ulist > div {
+    scroll-snap-align: start;
+    flex: 0 0 85%; /* each card takes up most of the screen */
+    box-sizing: border-box;
+  }
+
+  
+}
+
+.ulist::-webkit-scrollbar {
+  height: 12px; /* wider scrollbar */
+}
+
+.ulist::-webkit-scrollbar-thumb {
+  background: #888; /* or any color you like */
+  border-radius: 6px;
+}
+
+.ulist::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
 
 .ulist {
   overflow-x: scroll;
@@ -349,7 +452,7 @@ width: 250px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; */
+  border-radius: 15px; 
  
 }
 
@@ -479,7 +582,7 @@ color: #DEFCAB;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; */
+  border-radius: 15px; 
 }
 
 .addnew {
@@ -492,7 +595,7 @@ color: #DEFCAB;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; */
+  border-radius: 15px; 
 }
 
 .addnews {
@@ -550,6 +653,12 @@ color: #DEFCAB;
  
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .frontpage {
+    width: 300px;
+  }
+}
+
 .showname {
   font-style: lato, sans-serif;
   font-size: 32px;
@@ -579,7 +688,7 @@ color: #DEFCAB;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; */
+  border-radius: 15px; 
 }
 
 .citizen {
@@ -595,4 +704,27 @@ color: #DEFCAB;
 
   color:rgb(91, 91, 91) ;
  
+}
+
+@media (max-width: 480px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .show-on-mobile {
+    display: block !important;
+  }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .review {
+    max-width: 480px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

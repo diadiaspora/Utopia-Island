@@ -1,6 +1,6 @@
 <nav>
 
-    <div>
+    <div class="nav">
 
         <% if (user) { %>
             <audio controls autoplay>
@@ -10,7 +10,7 @@
 
 
             <div class="butt">
-                <p style=""> You are signed in, <%= user.name %>
+                <p > You are signed in, <%= user.name %>
                 </p>
                 <a href="/auth/sign-out"
                     style="padding-top: 15px; margin-right: 23px; margin-left: 20px; underline; color:#DEFCAB">SIGN
