@@ -256,6 +256,13 @@ form * {
   
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .formz {
+    width: 300px;
+    margin-left: -420px;
+  }
+}
+
 .formss {
   background-color: #2B342D;
   border-style: solid;
@@ -275,6 +282,7 @@ input {
   display: grid;
   grid-template-columns: auto auto;
 }
+
 
 
 
@@ -305,13 +313,7 @@ a .profile {
 
     padding: 0 16px;
     margin: 0;
-    /* margin: 16px;
-   
-    flex-direction: column;
-   
-    
-    margin-left: 70%;
-    margin-bottom: 0px; */
+
    
    }
 
@@ -718,6 +720,11 @@ color: #DEFCAB;
   }
 }
 
+@media (max-width: 480px) {
+  .palm {
+    display: none !important;
+  }
+}
 
 
 @media (min-width: 320px) and (max-width: 480px) {
