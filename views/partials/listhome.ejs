@@ -1,0 +1,26 @@
+<% const defaultCitizens=[ "Cleopatra" , "Gandhi" , "James Brown" , "Greta Thunberg" , "Charles Darwin" , "Rocky Balboa"
+    , "Yoda" , "Lady Gaga" , "Anthony Bourdain" ]; const totalSlots=20; %>
+
+    <div>
+        <ol class="citlist">
+            <% for (let i=0; i < defaultCitizens.length; i++) { %>
+                <li class="citlist">
+                    <% if (user) { %>
+                        <a href="#" class="citlink" onclick="return false;">
+                            <%= defaultCitizens[i] %>
+                        </a>
+                        <% } else { %>
+                            <%= defaultCitizens[i] %>
+                                <% } %>
+                </li>
+                <% } %>
+
+                    <% for (let i=defaultCitizens.length; i < totalSlots; i++) { %>
+                        <li class="citlist">
+                            <% if (user) { %>
+                                <a href="#" class="citlink" onclick="return false;"></a>
+                                <% } %>
+                        </li>
+                        <% } %>
+        </ol>
+    </div>

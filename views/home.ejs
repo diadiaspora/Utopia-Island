@@ -1,82 +1,72 @@
 <%- include('./partials/header.ejs') %>
+
     <div class="utopia">
         <header>
             <div class="header">
                 <div>
                     <img class="image" src="/images/logo.png" alt="Utopia Island logo">
-                    <p class="sub"> An app to populate your island</p>
+                    <p class="sub">An app to populate your island</p>
                 </div>
             </div>
+
             <div>
                 <%- include('./partials/buttons.ejs') %>
             </div>
         </header>
 
-        <div>
-            <aside>
-
-                <div class="left" style="margin-top: -18px;">
-                    <div class="hide-on-mobile">
-                        <p style="color: #DEFCAB; "> The current year is Zed...</p>
-                        <p style="color: #DEFCAB"> You have been provided with the last (and first)
-                            Island in this edition of humanity. </p>
-                        <p style="color: #DEFCAB"> In addition to your personal circle,</p>
-                        <p style="font-weight: bold; font-size: 20px;"> You can invite celebrities from the former
-                            edition
-                            of
-                            humanity</p>
-                        <p style="font-weight: bold; font-size: 20px;"> These celebrities can be:
-                        <ul style="color:white; font-weight: bold; font-size: 20px;">
-                            <li> ‘Living‘ or ‘dead’ </li>
-                            <li> Fictional or non fictional</li>
-                            <li> Historical figures or everyday celebrities</li>
-                        </ul>
-                        <p style="color: #DEFCAB"> The Unknown has provided you with a few favorites
-                            You can delete them or change their role in the new society</p>
-                    </div>
-                    <div class="show-on-mobile" style="color: white;">
-                        If you had your own private island. Who would you invite, outside of your personal circle? It can be celebrities living or dead.
-                    </div>
-
-                    <div class="review">
-                        <% if (user) { %>
-                            <div>
-
-
-
-                                <a href="/citizens" class="frontpage">Add Citizens</a>
-                            </div>
-
-                            <% } else { %>
-
-                                <div>
-
-                                    <a href="/auth/sign-in" class="frontpage">Add Citizens</a>
-                                </div>
-
-                                <% } %>
-                    </div>
-
+        <aside>
+            <div class="left" style="margin-top: -18px;">
+                <div class="hide-on-mobile">
+                    <p style="color: #DEFCAB;">The current year is Zed...</p>
+                    <p style="color: #DEFCAB;">You have been provided with the last (and first) Island in this edition
+                        of humanity.</p>
+                    <p style="color: #DEFCAB;">In addition to your personal circle,</p>
+                    <p style="font-weight: bold; font-size: 20px;">You can invite celebrities from the former edition of
+                        humanity</p>
+                    <ul style="color: white; font-weight: bold; font-size: 20px;">
+                        <li>‘Living‘ or ‘dead’</li>
+                        <li>Fictional or non-fictional</li>
+                        <li>Historical figures or everyday celebrities</li>
+                    </ul>
+                    <p style="color: #DEFCAB;">The Unknown has provided you with a few favorites. You can delete them or
+                        change their role in the new society.</p>
                 </div>
-            </aside>
-        </div>
 
+                <div class="show-on-mobile" style="color: white;">
+                    If you had your own private island, who would you invite—outside of your personal circle? It can be
+                    celebrities living or dead.
+                </div>
+
+                <div class="review">
+                    <% if (user) { %>
+                        <div>
+                            <a href="/citizens" class="frontpage">Add Citizens</a>
+                        </div>
+                        <% } else { %>
+                            <div>
+                                <a href="/auth/sign-in" class="frontpage">Add Citizens</a>
+                            </div>
+                            <% } %>
+                </div>
+            </div>
+        </aside>
 
         <main>
-
             <div class="right">
-
                 <div>
                     <h2 style="font-family: Lato, sans-serif; text-align: center; padding-top: 10px;">Current Citizens
                     </h2>
-
                 </div>
+
                 <div>
-                    <%- include('./partials/list.ejs')%>
+                    <% if (user) { %>
+                        <%- include('./partials/list.ejs') %>
+                            <% } else { %>
+                                <%- include('./partials/listhome.ejs') %>
+                                    <% } %>
                 </div>
-
             </div>
-
         </main>
     </div>
+
     <%- include('./partials/footer.ejs') %>

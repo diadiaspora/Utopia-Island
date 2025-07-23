@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,12 +14,11 @@ body {
   justify-content: center;
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
   body {
-   max-width: 480px;
-   display: flex;
-   flex-direction: column;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -36,10 +35,10 @@ header {
 
 @media (min-width: 320px) and (max-width: 480px) {
   header {
-   max-width: 480px;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -59,14 +58,12 @@ nav {
   justify-content: space-around;
 }
 
-
-
 .butt {
   display: flex;
   align-items: flex-start;
- justify-content: right;
- margin-right: -20px;
- font-family: Lato, sans-serif;
+  justify-content: right;
+  margin-right: -20px;
+  font-family: Lato, sans-serif;
 }
 
 aside {
@@ -76,17 +73,16 @@ aside {
   margin-right: 40px;
   width: 550px;
   font-family: Lato, sans-serif;
-  
 }
 @media (min-width: 320px) and (max-width: 480px) {
   aside {
     font-size: 16px;
     max-width: 200px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   }
+  }
 }
 
 .margin {
@@ -94,15 +90,12 @@ aside {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .margin {
-  
-  
-    display:flex;
-    flex-direction: column;;
+    display: flex;
+    flex-direction: column;
     /* justify-content: center;
     align-items: center; */
-   }
+  }
 }
-
 
 p {
   color: white;
@@ -119,14 +112,12 @@ p {
   /* height: 100%; */
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
   .utopia {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 }
-
 
 .left {
   margin-top: -45px;
@@ -141,19 +132,17 @@ p {
     font-size: 16px;
     max-width: 400px;
     margin: 16px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 70%;
     margin-bottom: 0px;
-   
-   }
+  }
 }
 
-
 .right {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   height: 475px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -166,9 +155,7 @@ p {
     max-width: 400px;
     margin-left: 16px;
     margin-right: 16px;
-
-   
-   }
+  }
 }
 
 footer {
@@ -176,19 +163,17 @@ footer {
   font-family: Lato, sans-serif;
 }
 
-nav{
-  
+nav {
   background-color: black;
   font-family: Lato, sans-serif;
 }
-
 
 .image {
   width: 300px;
 }
 
 .sub {
-  color: #DEFCAB;
+  color: #defcab;
   margin-top: -2px;
   font-size: 22px;
 }
@@ -203,9 +188,6 @@ label {
   font-family: Lato, sans-serif;
 }
 
-
-
-
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -218,43 +200,39 @@ form * {
   padding: 1vmin;
   border-radius: 1vmin;
   font-family: Lato, sans-serif;
-  
 }
 
 .forms {
-  background-color: #2B342D;
+  background-color: #2b342d;
   border-style: solid;
   border-width: 10px;
-  border-color: #525E4F;
-  padding: 20px ;
+  border-color: #525e4f;
+  padding: 20px;
   border-radius: 20px;
   height: 480px;
   font-family: Lato, sans-serif;
-  
 }
 
 .formy {
-  background-color: #2B342D;
+  background-color: #2b342d;
   border-style: solid;
   border-width: 10px;
-  border-color: #525E4F;
-  padding: 20px ;
+  border-color: #525e4f;
+  padding: 20px;
   border-radius: 20px;
   height: 423px;
   font-family: Lato, sans-serif;
-  
 }
 
 .formz {
-  background-color: #2B342D;
+  background-color: #2b342d;
   border-style: solid;
   border-width: 10px;
-  border-color: #525E4F;
-  padding: 20px ;
+  border-color: #525e4f;
+  padding: 20px;
   border-radius: 20px;
   height: 423px;
   font-family: Lato, sans-serif;
-  
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -267,28 +245,24 @@ form * {
 @media (min-width: 320px) and (max-width: 480px) {
   .formy {
     width: 300px;
- 
   }
 }
 
-
 .formss {
-  background-color: #2B342D;
+  background-color: #2b342d;
   border-style: solid;
   border-width: 10px;
-  border-color: #525E4F;
-  padding: 20px ;
+  border-color: #525e4f;
+  padding: 20px;
   border-radius: 20px;
   height: 423px;
   font-family: Lato, sans-serif;
-  
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .formss {
     height: 323px;
     width: 250px;
-  
   }
 }
 
@@ -301,9 +275,6 @@ input {
   grid-template-columns: auto auto;
 }
 
-
-
-
 a .profile {
   background-color: none;
 }
@@ -315,8 +286,6 @@ a .profile {
   display: flex;
   gap: 4vw;
 }
-
-
 
 @media (min-width: 320px) and (max-width: 480px) {
   .ulist {
@@ -331,11 +300,9 @@ a .profile {
 
     padding: 0 16px;
     margin: 0;
+  }
 
-   
-   }
-
-   .ulist > div {
+  .ulist > div {
     scroll-snap-align: start;
     flex: 0 0 85%; /* each card takes up most of the screen */
     box-sizing: border-box;
@@ -344,12 +311,12 @@ a .profile {
   .ulist::-webkit-scrollbar {
     height: 12px; /* wider scrollbar */
   }
-  
+
   .ulist::-webkit-scrollbar-thumb {
     background: #888; /* or any color you like */
     border-radius: 6px;
   }
-  
+
   .ulist::-webkit-scrollbar-track {
     background: transparent;
   }
@@ -368,8 +335,6 @@ a .profile {
   background: transparent;
 }
 
-
-
 .ulist {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -378,23 +343,22 @@ a .profile {
 .list {
   width: 100%;
   list-style-type: none;
-  background-color: #2B342D;
-  border: 10px solid #525E4F;
+  background-color: #2b342d;
+  border: 10px solid #525e4f;
   padding: 20px;
-border-radius: 20px;
-columns: 1;
-height: 175px;
-width: 250px;
-
+  border-radius: 20px;
+  columns: 1;
+  height: 175px;
+  width: 250px;
 }
 
 .list {
-    scroll-snap-align: center; 
+  scroll-snap-align: center;
 }
 
 .list:nth-child(even) {
-  background-color: #2B342D;
-  border: 10px solid #525E4F;
+  background-color: #2b342d;
+  border: 10px solid #525e4f;
 }
 
 .ulist {
@@ -403,7 +367,7 @@ width: 250px;
 }
 
 .list {
-  scroll-snap-align: center; 
+  scroll-snap-align: center;
 }
 
 .ulist::scroll-button(*) {
@@ -459,46 +423,43 @@ width: 250px;
 }
 
 .card {
-  background-color: #2B342D;
+  background-color: #2b342d;
   border-radius: 20px;
   border-style: solid;
   border-width: 10px;
-  border-color: #525E4F;
+  border-color: #525e4f;
   display: flex;
   flex-direction: column;
   max-width: 550px;
   height: 423px;
   padding: 20px;
   margin-top: 0px;
- 
- 
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .card {
-   max-width: 300px;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   height: 500px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .rev {
-margin-left: -30px;
-margin-bottom: 2px;
+    margin-left: -30px;
+    margin-bottom: 2px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .delete {
-margin-left: -280px;
-
+    margin-left: -280px;
   }
 }
 
 .up {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
   margin-right: 20px;
@@ -506,12 +467,11 @@ margin-left: -280px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
- 
+  border-radius: 15px;
 }
 
 .in {
- background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
   margin-right: 20px;
@@ -519,43 +479,35 @@ margin-left: -280px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 .getin {
- 
-    display: flex;
-    flex-direction: column;
- 
-  
+  display: flex;
+  flex-direction: column;
 }
 
-.rightbutt{
+.rightbutt {
   align-self: flex-end;
 }
 
 .rolediv {
   display: flex;
   justify-content: space-between;
-
-
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .rolediv {
-   max-width: 200px;
-
+    max-width: 200px;
   }
 }
 
-
-.align{
+.align {
   display: flex;
   flex-direction: column;
 }
 
 .links {
   width: 50px;
- 
 }
 
 .citlist {
@@ -567,21 +519,15 @@ margin-left: -280px;
 }
 
 .citlink {
-
   text-decoration: none;
   color: black;
   font-family: Lato, sans-serif;
   text-decoration: none;
- 
-}  
-
-.citlist a:hover {
-
-  color:rgb(91, 91, 91) ;
- 
 }
 
-
+.citlist a:hover {
+  color: rgb(91, 91, 91);
+}
 
 .inside {
   margin-left: -12px;
@@ -589,8 +535,8 @@ margin-left: -280px;
 
 @media (min-width: 320px) and (max-width: 480px) {
   .inside {
-margin-top: 20px;
-margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -600,22 +546,18 @@ margin-bottom: 20px;
 
 @media (min-width: 320px) and (max-width: 480px) {
   .sec {
-margin-top: 20px;
-margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
 .organize {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
- 
-
-  
 }
 
 .position {
- 
   font-size: 14px;
   color: #838383;
   margin-top: 4px;
@@ -624,95 +566,86 @@ margin-bottom: 20px;
 }
 
 .lin {
-
-text-align: right;
-font-size: 22px;
-margin-bottom: 0px;
-color: #DEFCAB;
+  text-align: right;
+  font-size: 22px;
+  margin-bottom: 0px;
+  color: #defcab;
 }
 
 .rating {
   color: rgb(184, 184, 184);
   margin-top: -10px;
   margin-bottom: 10px;
-  /* grid-area: rating; */
-   } 
+
+}
 
 .name {
   font-weight: bold;
   font-size: 22px;
   color: white;
- 
-  
- 
-  
 }
 
 .bottom {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
-  
+
   width: 550px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .addnew {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
 
   width: 550px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .addnews {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 64px;
   width: 550px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
- text-align: center; 
-
- 
-
+  border-radius: 15px;
+  text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .addnews {
     width: 200px;
     margin-bottom: 42px;
-    display:flex;
-margin-left: 23%;
+    display: flex;
+    margin-left: 23%;
     justify-content: center;
     align-items: center;
-
   }
 }
 
 .edit {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
-  
+
   width: 550px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -720,58 +653,53 @@ margin-left: 23%;
     width: 280px;
     margin-bottom: 30px;
     margin-top: 30px;
-
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .textarea {
-  height: 120px;
-
+    height: 120px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .label {
-  margin-top: 10px;
-  margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .selector {
-  margin-top: 10px;
-  margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
-
 .back {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
 
   width: 550px;
-  padding: 8px ;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .back {
-margin-top: 20px;
-margin-bottom: 20px;
-width: 250px;
-margin-left: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    margin-left: 55%;
   }
 }
 
-
-
 .frontpage {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 42px;
   width: 550px;
@@ -779,8 +707,7 @@ margin-left: 55%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
- 
+  border-radius: 15px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -803,16 +730,14 @@ margin-left: 55%;
 
 .formrole {
   font-style: lato, sans-serif;
-  color:#DEFCAB;
+  color: #defcab;
   font-size: 16px;
   margin-bottom: 6px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .formrole {
-   margin-left: 40px;
-
-
+    margin-left: 40px;
   }
 }
 
@@ -825,31 +750,22 @@ margin-left: 55%;
 
 @media (min-width: 320px) and (max-width: 480px) {
   .currrole {
-   margin-left: 250px;
-   margin-right: -120px;
-
-
+    margin-left: 250px;
+    margin-right: -120px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .review {
-margin-top: 80px;
-display: flex;
-flex-direction: column;
-margin-left: -154px;
-
-
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -154px;
   }
 }
 
-
-
-
-
-
 .notengo {
-  background-color: #DEFCAB;
+  background-color: #defcab;
   color: black;
   margin-top: 16px;
   margin-right: 20px;
@@ -857,24 +773,20 @@ margin-left: -154px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .citizen {
   font-family: Lato, sans-serif;
-  text-align: center; 
+  text-align: center;
   padding-top: 10px;
   color: black;
   font-size: 26px;
   font-weight: bold;
 }
 
-
-
 .citizen a:hover {
-
-  color:rgb(91, 91, 91) ;
- 
+  color: rgb(91, 91, 91);
 }
 
 @media (max-width: 480px) {
@@ -895,11 +807,10 @@ margin-left: -154px;
   }
 }
 
-
 @media (min-width: 320px) and (max-width: 480px) {
   .review {
     max-width: 480px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }

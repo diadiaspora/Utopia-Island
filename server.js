@@ -5,7 +5,7 @@ const app = express();
 
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
-// logging middleware
+
 const morgan = require("morgan");
 const session = require("express-session");
 
@@ -17,11 +17,9 @@ const Citizen = require("./models/citizen.js");
 
 mongoose.connect(process.env.MONGODB_URI);
 
-
 mongoose.connection.on("connected", () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
-
 
 app.use(express.static("public"));
 
@@ -30,7 +28,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 
 app.use(morgan("dev"));
-
 
 app.use(
   session({
@@ -46,20 +43,21 @@ app.use(require("./middleware/add-user-to-req-and-locals"));
 app.use("/auth", authController);
 app.use("/citizens", citizensController);
 
-// Routes below
-
-// GET / (root/default) -> Home Page
 app.get("/", async (req, res) => {
-  const foundCitizen = await Citizen.findById(req.params.citizenId);
-  const allCitizens = await Citizen.find({});
- 
+  const userId = req.session.userId;
+  let citizens = [];
+
+  if (userId) {
+    citizens = await Citizen.find({ user: userId });
+  } else {
+    citizens = await Citizen.find({ user: null });
+  }
+
   res.render("home.ejs", {
-    citizen: foundCitizen,
-    citizens: allCitizens,
+    citizens: citizens,
+    user: userId,
   });
 });
-
-
 
 app.use("/auth", require("./controllers/auth"));
 

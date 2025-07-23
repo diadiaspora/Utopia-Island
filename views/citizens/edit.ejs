@@ -17,7 +17,7 @@
         <aside class="margin">
             <div class="left">
                 <div class="formy">
-                    <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST" class="getin" >
+                    <form action="/citizens/<%=citizen._id%>?_method=PUT" method="POST" class="getin">
                         <h1 style="color: white; margin-bottom: -30px; margin-top: -18px;" class="showname">
                             <%= citizen.name %>
                         </h1>
@@ -36,8 +36,8 @@
 
                         <label for="reason" style="margin-bottom: -18px; margin-top: -20px;"> Reason why this person was
                             chosen for Utopia Island:</label>
-                        <textarea type="text" name="reason" id="reason"
-                            maxlength="260" class="textarea"> <%= citizen.reason %>  </textarea>
+                        <textarea type="text" name="reason" id="reason" maxlength="260"
+                            class="textarea"> <%= citizen.reason %>  </textarea>
 
                         <label for="rating" style="margin-bottom: -16px;" class="label">Select a rating:</label>
                         <select name="rating" style="background-color: rgb(121, 121, 121);" class="selector">
@@ -50,12 +50,12 @@
 
 
 
-                  
 
 
-                            <button type="submit" class="updated" >Update Citizen</button>
 
-                     
+                        <button type="submit" class="updated">Update Citizen</button>
+
+
 
                     </form>
                 </div>
