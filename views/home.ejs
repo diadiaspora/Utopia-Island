@@ -8,6 +8,13 @@
                     <p class="sub">An app to populate your island</p>
                 </div>
             </div>
+            <div class="show-on-mobile">
+                <img src="/images/palms.png" alt="Utopia Island logo" style="max-width: 100%;">
+            </div>
+            <div class="show-on-mobile" style="color: white; max-width: 100%; width: 90%; margin-bottom: 30px;">
+                If you had your own private island, who would you invite—outside of your personal circle? It can be
+                celebrities living or dead.
+            </div>
 
             <div>
                 <%- include('./partials/buttons.ejs') %>
@@ -32,12 +39,9 @@
                         change their role in the new society.</p>
                 </div>
 
-                <div class="show-on-mobile" style="color: white;">
-                    If you had your own private island, who would you invite—outside of your personal circle? It can be
-                    celebrities living or dead.
-                </div>
+             
 
-                <div class="review">
+                <div class="review" >
                     <% if (user) { %>
                         <div>
                             <a href="/citizens" class="frontpage">Add Citizens</a>
@@ -51,7 +55,7 @@
             </div>
         </aside>
 
-        <main>
+        <main class="main-thing">
             <div class="right">
                 <div>
                     <h2 style="font-family: Lato, sans-serif; text-align: center; padding-top: 10px;">Current Citizens
@@ -65,6 +69,17 @@
                                 <%- include('./partials/listhome.ejs') %>
                                     <% } %>
                 </div>
+                        <div class="show-on-mobile" style="padding-bottom: 50px;">
+                            <% if (user) { %>
+                                <div>
+                                    <a href="/citizens" class="frontpage">Add Citizens</a>
+                                </div>
+                                <% } else { %>
+                                    <div>
+                                        <a href="/auth/sign-in" class="frontpage">Add Citizens</a>
+                                    </div>
+                                    <% } %>
+                        </div>
             </div>
         </main>
     </div>

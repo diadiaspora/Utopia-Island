@@ -13,12 +13,20 @@ body {
   margin: 40px;
   justify-content: center;
 }
+.show-on-mobile {
+  display: none;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   body {
     max-width: 480px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+ 
+    margin: 0px;
+    
+    align-items: center;
   }
 }
 
@@ -92,8 +100,12 @@ aside {
   .margin {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    align-items: center;
+     justify-content: center;
+     margin-left: 3rem;
+    margin-top: 0px;
+    max-width: 50%;
+   
   }
 }
 
@@ -101,22 +113,30 @@ p {
   color: white;
   font-family: Lato, sans-serif;
 }
+
 .utopia {
   max-width: 1920px;
   display: grid;
-  /* grid-template-rows: auto 1fr auto; */
-  /* three rows defined here */
   grid-template-columns: 2fr 1fr;
-  /* two columns defined here */
   font-family: Lato, sans-serif;
-  /* height: 100%; */
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .utopia {
+    max-width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0px;
+    padding-left: 0px;
   }
+}
+
+.main-thing {
+  max-width: 100%;
+  margin-left: 0px;
 }
 
 .left {
@@ -130,13 +150,13 @@ p {
 @media (min-width: 320px) and (max-width: 480px) {
   .left {
     font-size: 16px;
-    max-width: 400px;
-    margin: 16px;
+    max-width: 100%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 70%;
+    margin-left: 0;
     margin-bottom: 0px;
   }
 }
@@ -152,9 +172,11 @@ p {
 @media (min-width: 320px) and (max-width: 480px) {
   .right {
     font-size: 16px;
-    max-width: 400px;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 19rem;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -30px;
   }
 }
 
@@ -238,10 +260,17 @@ form * {
 @media (min-width: 320px) and (max-width: 480px) {
   .formz {
     width: 300px;
-    margin-left: -420px;
+    height: 340px;
+   
   }
 }
-
+@media (min-width: 320px) and (max-width: 480px) {
+  .forms {
+    width: 300px;
+    height: 340px;
+   
+  }
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .formy {
     width: 300px;
@@ -262,7 +291,7 @@ form * {
 @media (min-width: 320px) and (max-width: 480px) {
   .formss {
     height: 323px;
-    width: 250px;
+    width: 19rem;
   }
 }
 
@@ -270,9 +299,21 @@ input {
   width: 100%;
   font-family: Lato, sans-serif;
 }
+
 .sign {
   display: grid;
   grid-template-columns: auto auto;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+.sign {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
 }
 
 a .profile {
@@ -291,9 +332,9 @@ a .profile {
   .ulist {
     display: flex;
     overflow-x: auto;
-    height: 220px;
-    margin: 16px;
+    height: 220px; 
     max-width: 350px;
+    width: 19rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 16px;
@@ -481,9 +522,20 @@ a .profile {
   display: inline-block;
   border-radius: 15px;
 }
+
 .getin {
   display: flex;
   flex-direction: column;
+}
+
+.labels {
+  margin-bottom: -18px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .labels {
+    margin-bottom: -8px;
+  }
 }
 
 .rightbutt {
@@ -576,7 +628,6 @@ a .profile {
   color: rgb(184, 184, 184);
   margin-top: -10px;
   margin-bottom: 10px;
-
 }
 
 .name {
@@ -626,12 +677,13 @@ a .profile {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .addnews {
-    width: 200px;
-    margin-bottom: 42px;
+    width: 19rem;
+    margin-bottom: 60px;
     display: flex;
-    margin-left: 23%;
+    margin-left: 0;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
   }
 }
 
@@ -692,9 +744,9 @@ a .profile {
 @media (min-width: 320px) and (max-width: 480px) {
   .back {
     margin-top: 20px;
-    margin-bottom: 20px;
-    width: 250px;
-    margin-left: 55%;
+    margin-bottom: 55px;
+    width: 19rem;
+    margin-left: 0;
   }
 }
 
@@ -809,9 +861,24 @@ a .profile {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .review {
-    max-width: 480px;
+      display: none !important;
+    max-width: 100%;
+    width: 14.5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+  
   }
+
+
 }
+@media (min-width: 320px) and (max-width: 480px) {
+.curcit {
+font-size: 10px;
+margin-bottom: 10px;
+}
+
+.newcit {
+  font-size: 18px;
+}
+}
+
